@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Material Icon CDN -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- slick slider link -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
@@ -26,41 +28,43 @@
   <div class="container">
     <!--header section start-->
     <header>
-      <h1 class="logo-heading">
-        <a class="homeicon" href="#FIXME" title="Logo">
-          <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
-        </a>
-      </h1>
-      <nav class="head-nav" id="navigation">
-        <ul class="nav-menu">
-          <li>
-            <a href="#FIXME" class="nav-link" title="Home">Home</a>
-          </li>
-          <li>
-            <a href="#FIXME" class="nav-link" title="Bicycles">Bicycles</a>
-          </li>
-          <li>
-            <a href="#FIXME" class="nav-link" title="Accessories">Accessories</a>
-          </li>
-          <a href="#FIXME" class="nav-link" title="About us">About us</a>
-          </li>
-          <li>
-            <a href="#FIXME" class="nav-link" title="Contact">Contact</a>
-          </li>
-        </ul>
-        <button class="hamburger">
-          <!-- material icons https://material.io/resources/icons/ -->
-          <i class="menuIcon material-icons">menu</i>
-          <i class="closeIcon material-icons">close</i>
-        </button>
-      </nav>
-      <div class="addto-cart">
-        <a href="#FIXME" class="addto" title="Add to cart">$0.00</a>
-      </div>
-      <div class="hamburger">
-        <span class="line line1">line1</span>
-        <span class="line line2">line2</span>
-        <span class="line line3">line3</span>
+      <div class="wrapper">
+        <h1 class="logo-heading">
+          <a class="homeicon" href="#FIXME" title="Logo">
+            <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
+          </a>
+        </h1>
+        <nav class="head-nav" id="navigation">
+          <ul class="nav-menu">
+            <li>
+              <a href="#FIXME" class="nav-link" title="Home">Home</a>
+            </li>
+            <li>
+              <a href="#FIXME" class="nav-link" title="Bicycles">Bicycles</a>
+            </li>
+            <li>
+              <a href="#FIXME" class="nav-link" title="Accessories">Accessories</a>
+            </li>
+            <a href="#FIXME" class="nav-link" title="About us">About us</a>
+            </li>
+            <li>
+              <a href="#FIXME" class="nav-link" title="Contact">Contact</a>
+            </li>
+          </ul>
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+        </nav>
+        <div class="addto-cart">
+          <a href="#FIXME" class="addto" title="Add to cart">$0.00</a>
+        </div>
+        <div class="hamburger">
+          <span class="line line1">line1</span>
+          <span class="line line2">line2</span>
+          <span class="line line3">line3</span>
+        </div>
       </div>
     </header>
     <!--header section start-->
@@ -69,27 +73,210 @@
       <section class="banner">
         <div class="banner-img">
           <figure>
-            <img src="assets/images/bicycle-1-800x800.jpg" alt="banner-img" />
+            <img src="assets/images/bike-hero.jpg" alt="banner-img" />
           </figure>
           <div class="banner-content">
             <div class="banner-description">
               <div class="wrapper">
-              <h2>Newly launched <span class="description">kryo x26 mtb</span></h2>
-              <div class="specifications">
-                <span>Specifications:</span>
-                <ul>
-                  <li>Lightweight 18" Frame</li>
-                  <li>Steel Suspension Fork</li>
-                  <li>Steel Hardtail Frame</li>
-                </ul>
-                <a class="buy btn" href="#FIXME" title="Buy Now">Buy Now</a>
-              </div>
+                <h2>Newly launched <span class="description">kryo x26 mtb</span></h2>
+                <div class="specifications">
+                  <span>Specifications:</span>
+                  <ul>
+                    <li>Lightweight 18" Frame</li>
+                    <li>Steel Suspension Fork</li>
+                    <li>Steel Hardtail Frame</li>
+                  </ul>
+                  <a class="buy btn" href="#FIXME" title="Buy Now">Buy Now</a>
+                </div>
               </div>
             </div>
             <div class="banner-redbackground">
               <span>red background</span>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="arrivals">
+        <div class="wrapper">
+          <h2>New Arrivals</h2>
+          <ul class="slide-area">
+            <li>
+              <figure>
+                <img src="assets/images/bicycle-7-800x800.jpg" class="bicycleImg" alt="Bicycles">
+                <!-- The Modal -->
+                <div class="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content modal-img">
+                </div>
+                <figcaption class="arrival arrival1">
+                  <span>Bicycles</span>
+                  <h3>kryo x26 mtb model k</h3>
+                  <ul class="stars">
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                  </ul>
+                  <span class="bicycle-price">$350</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/bicycle-1-800x800.jpg" class="bicycleImg" alt="Bicycles">
+                <!-- The Modal -->
+                <div class="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content modal-img">
+                </div>
+                <figcaption class="arrival arrival2">
+                  <span>Bicycles</span>
+                  <h3>kryo x26 mtb model x</h3>
+                  <ul class="stars">
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                  </ul>
+                  <span class="bicycle-price">$350</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/bicycle-5-800x800.jpg" class="bicycleImg" alt="Bicycles">
+                <!-- The Modal -->
+                <div class="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content modal-img">
+                </div>
+                <figcaption class="arrival arrival3">
+                  <span>Bicycles</span>
+                  <h3>kryo x26 mtb model y</h3>
+                  <ul class="stars">
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                  </ul>
+                  <span class="bicycle-price">$350</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/bicycle-4-800x800.jpg" class="bicycleImg" alt="Bicycles">
+                <!-- The Modal -->
+                <div class="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content modal-img">
+                </div>
+                <figcaption class="arrival arrival4">
+                  <span>Bicycles</span>
+                  <h3>kryo x26 mtb model z</h3>
+                  <ul class="stars">
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                  </ul>
+                  <span class="bicycle-price">$350</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/bicycle-3.jpg" class="bicycleImg" alt="Bicycles">
+                <!-- The Modal -->
+                <div class="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content modal-img">
+                </div>
+                <figcaption class="arrival arrival5">
+                  <span>Bicycles</span>
+                  <h3>kryo x26 mtb model z</h3>
+                  <ul class="stars">
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                  </ul>
+                  <span class="bicycle-price">$350</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/bicycle-8.jpg" class="bicycleImg" alt="Bicycles">
+                <!-- The Modal -->
+                <div class="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content modal-img">
+                </div>
+                <figcaption class="arrival arrival6">
+                  <span>Bicycles</span>
+                  <h3>kryo x26 mtb model z</h3>
+                  <ul class="stars">
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                  </ul>
+                  <span class="bicycle-price">$350</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/bicycle-10.jpg" class="bicycleImg" alt="Bicycles">
+                <!-- The Modal -->
+                <div class="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content modal-img">
+                </div>
+                <figcaption class="arrival arrival7">
+                  <span>Bicycles</span>
+                  <h3>kryo x26 mtb model z</h3>
+                  <ul class="stars">
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                  </ul>
+                  <span class="bicycle-price">$350</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/bicycle-9.jpg" class="bicycleImg" alt="Bicycles">
+                <!-- The Modal -->
+                <div class="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content modal-img">
+                </div>
+                <figcaption class="arrival arrival8">
+                  <span>Bicycles</span>
+                  <h3>kryo x26 mtb model z</h3>
+                  <ul class="stars">
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                    <li>star</li>
+                  </ul>
+                  <span class="bicycle-price">$350</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -100,6 +287,11 @@
     <!--footer section end-->
   </div>
   <!--container end-->
+  <!-- slick slider script starts -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- slick slider script ends -->
   <script src="assets/js/script.js"></script>
 </body>
 
