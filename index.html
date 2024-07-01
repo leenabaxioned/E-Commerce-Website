@@ -1,10 +1,10 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
+  <title>Homepage</title>
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
@@ -13,16 +13,55 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Material Icon CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
+
 <body>
   <!--container start-->
   <div class="container">
     <!--header section start-->
     <header>
+      <h1 class="logo-heading">
+        <a class="homeicon" href="#FIXME" title="Logo">
+          <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
+        </a>
+      </h1>
+      <nav class="head-nav" id="navigation">
+        <ul class="nav-menu">
+          <li>
+            <a href="#FIXME" class="nav-link" title="Home">Home</a>
+          </li>
+          <li>
+            <a href="#FIXME" class="nav-link" title="Bicycles">Bicycles</a>
+          </li>
+          <li>
+            <a href="#FIXME" class="nav-link" title="Accessories">Accessories</a>
+          </li>
+          <a href="#FIXME" class="nav-link" title="About us">About us</a>
+          </li>
+          <li>
+            <a href="#FIXME" class="nav-link" title="Contact">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+      </nav>
+      <div class="addto-cart">
+        <a href="#FIXME" class="addto" title="Add to cart">$0.00</a>
+      </div>
+      <div class="hamburger">
+        <span class="line line1">line1</span>
+        <span class="line line2">line2</span>
+        <span class="line line3">line3</span>
+      </div>
     </header>
     <!--header section start-->
     <!--main section start-->
@@ -30,11 +69,12 @@
     </main>
     <!--main section end-->
     <!--footer section start-->
-    <footer>      
+    <footer>
     </footer>
     <!--footer section end-->
   </div>
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
