@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,11 +13,12 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
+
 <body>
   <!--container start-->
   <div class="container">
@@ -100,15 +101,60 @@
           </ul>
         </div>
       </section>
-      <!--enquires section ends-->
+      <!--enquires section end-->
+      <!--contact-details section start-->
+      <section class="contact-details">
+        <div class="wrapper">
+          <div class="detail">
+            <form action="javascript:void(0);">
+              <h3>Let's Get In Touch</h3>
+              <div class="names">
+                <div class="firstname">
+                  <input type="text" id="fname" name="fname" placeholder="First name" />
+                </div>
+                <div class="lastname">
+                  <input type="text" id="lname" name="lname" placeholder="Last name" />
+                </div>
+              </div>
+              <div class="email-id">
+                <input type="text" id="email" name="email" placeholder="Enter email address" />
+              </div>
+              <div class="form-message">
+                <textarea name="message" id="message" rows="8" cols="40" placeholder="Enter your message"></textarea>
+              </div>
+              <button class="send" type="submit" value="Send">Send Message</button>
+            </form>
+            <div class="detail-info">
+              <h3>Contact Details</h3>
+              <div class="info timings">
+                <h4>our hours</h4>
+                <span>10:00 AM - 22.00</span>
+                <span>Monday - Friday</span>
+              </div>
+              <div class="info address">
+                <h4>Location</h4>
+                <address>212 7th St SE, Washington, DC 20003, USA</address>
+              </div>
+              <div class="info contactus">
+                <h4>Contact Us</h4>
+                <span>Phone: <a class="callus" href="tel:+18007556020" title="Call us">1 800 755 60 20</a></span>
+                <span>Email: <a class="mail" href="mailto:contact@company.com"
+                    title="Mail us">contact@company.com</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--contact-details section end-->
     </main>
     <!--main section end-->
     <!--footer section start-->
-    <footer>      
+    <footer>
     </footer>
     <!--footer section end-->
   </div>
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
