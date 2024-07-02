@@ -181,6 +181,226 @@ h3 {
 /*=================================
   main styling starts here
 =================================*/
+/* banner section styling starts */
+.banner { position: relative; }
+
+.homepage .banner-content {
+  position: absolute;
+  top: 0;
+  height: 965px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-image: linear-gradient(to right, rgba(23, 26, 26, 0.5) 50%, rgba(255, 83, 79, 0.5) 50%);
+  z-index: 1; 
+}
+
+.homepage .banner-content .wrapper {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  width: 50%;
+  color: #fff;
+}
+
+.banner-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.description {
+  width: 50%;
+  display: block;
+  padding: 10px 0 20px 0;
+  font-size: 60px;
+}
+
+.specifications span {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.specifications ul {
+  padding: 15px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.specifications ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.specifications ul li::before { 
+  font-family: "FontAwesome";
+  content: "\f140";
+  color: #fff;
+  text-indent: 0;
+}
+/* banner section styling starts */
+/* arrivals section styling starts */
+.arrivals { 
+  margin: 100px auto;
+  position: relative;
+ }
+
+.arrival-heading {
+  display: block;
+  padding: 10px 0;
+  color: #b0b3b7;
+  font-size: 15px;
+}
+
+.arrival h4 {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.arrival .stars { display: flex; }
+
+.arrival .stars li {
+  display: flex;
+  text-indent: -9999px;
+}
+
+.arrival .stars li::after { 
+  font-family: "FontAwesome";
+  content: "\f005";
+  color: #4b4f58;
+  font-size: 15px;
+  text-indent: 0;
+}
+
+.bicycle-price {
+  display: block;
+  padding-top: 5px;
+  color: #4b4f58;
+  font-size: 15px;
+}
+
+.slick-slide { margin-right: 20px; }
+
+.slick-slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.slide-area { position: relative; }
+
+.slide-area .slick-arrow {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  left: -20px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  background-color: #0e1111;
+  font-family: "FontAwesome";
+  text-indent: -9999px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.slide-area .slick-arrow:hover { 
+  border: 1px solid #0e1111;
+  background: #fff;
+ }
+
+ .slide-area .slick-arrow:hover::before { color: #0e1111; }
+
+.slide-area .slick-arrow::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-indent: 0;
+  transition: all 0.3s;
+}
+
+.slide-area .slick-arrow.slick-next {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  left: auto;
+  right: 0;
+}
+
+.slide-area .slick-next::before { content: "\3e"; }
+.slide-area .slick-prev::before { content: "\3c"; }
+
+.arrivals h3 {
+  padding-bottom: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* modal styling */
+/* ------------modal styling--------------------- */
+.modal-overlay {
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.modal-wrapper {
+	width: 400px;
+	height: 400px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.close-modal-btn{
+  display: flex;
+  background-color: transparent;
+  border: none;
+  text-indent: -9999px;
+}
+
+.close-modal-btn::before {
+  font-family: "FontAwesome";
+  content: "\f00d";
+  color: #fff;
+  font-size: 25px;
+  text-indent: 0;
+}
+
+.close-btn-wrapper {
+	display: flex;
+  justify-content: flex-end;
+}
+
+.modal-content {
+	margin: 20px auto;
+	max-width: 210px;
+	width: 100%;
+}
+
+.hide {
+	display: none;
+}
+/* arrivals section styling ends */
 
 /*=================================
   main styling ends here
