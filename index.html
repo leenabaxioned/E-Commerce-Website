@@ -1,714 +1,909 @@
-<!doctype html>
+<!DOCTYPE html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Homepage</title>
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
+  <head>
+    <meta charset="utf-8" />
+    <title>Homepage</title>
+    <!-- View-port Basics: http://mzl.la/VYREaP -->
+    <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
-  <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Material Icon CDN -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!-- slick slider link -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css">
-</head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!--font-awesome link for icons-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/vendor/font-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Material Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- slick slider link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+  </head>
 
-<body>
-  <!--container start-->
-  <div class="container">
-    <!--header section start-->
-    <header class="hompage-header">
-      <div class="wrapper">
-        <h1 class="logo-heading">
-          <a class="homeicon" href="index.html" title="Logo">
-            <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
-          </a>
-        </h1>
-        <nav class="head-nav navigation">
-          <ul class="nav-menu">
-            <li>
-              <a href="index.html" class="nav-link" title="Home">Home</a>
-            </li>
-            <li>
-              <a href="bicycle.html" class="nav-link" title="Bicycles">Bicycles</a>
-            </li>
-            <li>
-              <a href="accessory.html" class="nav-link" title="Accessories">Accessories</a>
-            </li>
-            <a href="#FIXME" class="nav-link" title="About us">About us</a>
-            </li>
-            <li>
-              <a href="contact.html" class="nav-link" title="Contact">Contact</a>
-            </li>
-          </ul>
-          <button class="hamburger">
-            <!-- material icons https://material.io/resources/icons/ -->
-            <i class="menuIcon material-icons">menu</i>
-            <i class="closeIcon material-icons">close</i>
-          </button>
-        </nav>
-        <div class="addto-cart">
-          <a href="#FIXME" class="addto" title="Add to cart">$0.00</a>
+  <body>
+    <!--container start-->
+    <div class="container">
+      <!--header section start-->
+      <header class="hompage-header">
+        <div class="wrapper">
+          <h1 class="logo-heading">
+            <a class="homeicon" href="index.html" title="Logo">
+              <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
+            </a>
+          </h1>
+          <nav class="head-nav navigation">
+            <ul class="nav-menu">
+              <li>
+                <a href="index.html" class="nav-link" title="Home">Home</a>
+              </li>
+              <li>
+                <a href="bicycle.html" class="nav-link" title="Bicycles"
+                  >Bicycles</a
+                >
+              </li>
+              <li>
+                <a href="accessory.html" class="nav-link" title="Accessories"
+                  >Accessories</a
+                >
+              </li>
+              <li>
+                <a href="#FIXME" class="nav-link" title="About us">About us</a>
+              </li>
+              <li>
+                <a href="contact.html" class="nav-link" title="Contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <button class="hamburger">
+              <!-- material icons https://material.io/resources/icons/ -->
+              <i class="menuIcon material-icons">menu</i>
+              <i class="closeIcon material-icons">close</i>
+            </button>
+          </nav>
+          <div class="addto-cart">
+            <a href="#FIXME" class="addto" title="Add to cart">$0.00</a>
+          </div>
+          <div class="hamburger">
+            <span class="line line1">line1</span>
+            <span class="line line2">line2</span>
+            <span class="line line3">line3</span>
+          </div>
         </div>
-        <div class="hamburger">
-          <span class="line line1">line1</span>
-          <span class="line line2">line2</span>
-          <span class="line line3">line3</span>
-        </div>
-      </div>
-    </header>
-    <!--header section start-->
-    <!--main section start-->
-    <main>
-      <!--banner section start-->
-      <section class="banner">
-        <div class="banner-img">
-          <figure>
-            <img src="assets/images/bike-hero.jpg" alt="banner-img" />
-          </figure>
-          <div class="banner-content">
-            <div class="banner-description">
+      </header>
+      <!--header section start-->
+      <!--main section start-->
+      <main>
+        <!--banner section start-->
+        <section class="banner">
+          <div class="banner-img">
+            <figure>
+              <img src="assets/images/bike-hero.jpg" alt="banner-img" />
+            </figure>
+            <div class="banner-content">
+              <div class="banner-description">
+                <div class="wrapper">
+                  <h2>
+                    Newly launched <span class="description">kryo x26 mtb</span>
+                  </h2>
+                  <div class="specifications">
+                    <span>Specifications:</span>
+                    <ul>
+                      <li>Lightweight 18" Frame</li>
+                      <li>Steel Suspension Fork</li>
+                      <li>Steel Hardtail Frame</li>
+                    </ul>
+                    <a class="buy btn" href="#FIXME" title="Buy Now">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-redbackground">
+                <span>red background</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--banner section end-->
+        <!--arrivals section start-->
+        <section class="arrivals">
+          <div class="wrapper">
+            <h3>New Arrivals</h3>
+            <ul class="slide-area">
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/bicycle-7-800x800.jpg"
+                    class="bicycleImg"
+                    alt="Bicycles"
+                  />
+                  <!-- The Modal -->
+                  <div class="myModal modal">
+                    <span class="close">&times;</span>
+                    <img
+                      src="assets/images/bicycle-7-800x800.jpg"
+                      class="modal-content modal-img"
+                      alt="Bicycle-img"
+                    />
+                  </div>
+                  <figcaption class="arrival arrival1">
+                    <span class="arrival-heading">Bicycles</span>
+                    <h4>kryo x26 mtb model k</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="bicycle-price">$350</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/bicycle-1-800x800.jpg"
+                    class="bicycleImg"
+                    alt="Bicycles"
+                  />
+                  <!-- The Modal -->
+                  <div class="myModal modal">
+                    <span class="close">&times;</span>
+                    <img
+                      src="assets/images/bicycle-1-800x800.jpg"
+                      class="modal-content modal-img"
+                      alt="Bicycle-img"
+                    />
+                  </div>
+                  <figcaption class="arrival arrival2">
+                    <span class="arrival-heading">Bicycles</span>
+                    <h4>kryo x26 mtb model x</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="bicycle-price">$350</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/bicycle-5-800x800.jpg"
+                    class="bicycleImg"
+                    alt="Bicycles"
+                  />
+                  <!-- The Modal -->
+                  <div class="myModal modal">
+                    <span class="close">&times;</span>
+                    <img
+                      src="assets/images/bicycle-5-800x800.jpg"
+                      class="modal-content modal-img"
+                      alt="Bicycle-img"
+                    />
+                  </div>
+                  <figcaption class="arrival arrival3">
+                    <span class="arrival-heading">Bicycles</span>
+                    <h4>kryo x26 mtb model y</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="bicycle-price">$350</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/bicycle-1-800x800.jpg"
+                    class="bicycleImg"
+                    alt="Bicycles"
+                  />
+                  <!-- The Modal -->
+                  <div class="myModal modal">
+                    <span class="close">&times;</span>
+                    <img
+                      src="assets/images/bicycle-1-800x800.jpg"
+                      class="modal-content modal-img"
+                      alt="Bicycle-img"
+                    />
+                  </div>
+                  <figcaption class="arrival arrival4">
+                    <span class="arrival-heading">Bicycles</span>
+                    <h4>kryo x26 mtb model z</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="bicycle-price">$350</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/bicycle-3.jpg"
+                    class="bicycleImg"
+                    alt="Bicycles"
+                  />
+                  <!-- The Modal -->
+                  <div class="myModal modal">
+                    <span class="close">&times;</span>
+                    <img
+                      src="assets/images/bicycle-3.jpg"
+                      class="modal-content modal-img"
+                      alt="Bicycle-img"
+                    />
+                  </div>
+                  <figcaption class="arrival arrival5">
+                    <span class="arrival-heading">Bicycles</span>
+                    <h4>kryo x26 mtb model a</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="bicycle-price">$350</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/bicycle-8.jpg"
+                    class="bicycleImg"
+                    alt="Bicycles"
+                  />
+                  <!-- The Modal -->
+                  <div class="myModal modal">
+                    <span class="close">&times;</span>
+                    <img
+                      src="assets/images/bicycle-8.jpg"
+                      class="modal-content modal-img"
+                      alt="Bicycle-img"
+                    />
+                  </div>
+                  <figcaption class="arrival arrival6">
+                    <span class="arrival-heading">Bicycles</span>
+                    <h4>kryo x26 mtb model b</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="bicycle-price">$350</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/bicycle-10.jpg"
+                    class="bicycleImg"
+                    alt="Bicycles"
+                  />
+                  <!-- The Modal -->
+                  <div class="myModal modal">
+                    <span class="close">&times;</span>
+                    <img
+                      src="assets/images/bicycle-10.jpg"
+                      class="modal-content modal-img"
+                      alt="Bicycle-img"
+                    />
+                  </div>
+                  <figcaption class="arrival arrival7">
+                    <span class="arrival-heading">Bicycles</span>
+                    <h4>kryo x26 mtb model c</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="bicycle-price">$350</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/bicycle-9.jpg"
+                    class="bicycleImg"
+                    alt="Bicycles"
+                  />
+                  <!-- The Modal -->
+                  <div class="myModal modal">
+                    <span class="close">&times;</span>
+                    <img
+                      src="assets/images/bicycle-9.jpg"
+                      class="modal-content modal-img"
+                      alt="Bicycle-img"
+                    />
+                  </div>
+                  <figcaption class="arrival arrival8">
+                    <span class="arrival-heading">Bicycles</span>
+                    <h4>kryo x26 mtb model d</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="bicycle-price">$350</span>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--arrivals section end-->
+        <!--mountain bikes section start-->
+        <section class="mountain-bikes">
+          <div class="mountain-bikeimg">
+            <div class="moutain-bikecontent">
               <div class="wrapper">
-                <h2>Newly launched <span class="description">kryo x26 mtb</span></h2>
-                <div class="specifications">
-                  <span>Specifications:</span>
-                  <ul>
-                    <li>Lightweight 18" Frame</li>
-                    <li>Steel Suspension Fork</li>
-                    <li>Steel Hardtail Frame</li>
+                <span>Discover the collection</span>
+                <h3>mountain bikes</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
+                </p>
+                <div class="content-list">
+                  <ul class="content-one">
+                    <li>Officia deserunt mollit</li>
+                    <li>Excepteur sint occaecat</li>
+                    <li>Sunt in culpa qui</li>
                   </ul>
-                  <a class="buy btn" href="#FIXME" title="Buy Now">Buy Now</a>
+                  <ul class="content-two">
+                    <li>Officia deserunt mollit</li>
+                    <li>Excepteur sint occaecat</li>
+                    <li>Sunt in culpa qui</li>
+                  </ul>
+                </div>
+                <a class="explore btn" href="#FIXME" title="Explore Now"
+                  >Explore Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--mountain bikes section end-->
+        <!--city bikes section start-->
+        <section class="city-bikes">
+          <div class="city-bikeimg">
+            <div class="city-bikecontent">
+              <div class="wrapper">
+                <span>Discover the collection</span>
+                <h3>city bikes</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
+                </p>
+                <div class="content-list">
+                  <ul class="content-one">
+                    <li>Officia deserunt mollit</li>
+                    <li>Excepteur sint occaecat</li>
+                    <li>Sunt in culpa qui</li>
+                  </ul>
+                  <ul class="content-two">
+                    <li>Officia deserunt mollit</li>
+                    <li>Excepteur sint occaecat</li>
+                    <li>Sunt in culpa qui</li>
+                  </ul>
+                </div>
+                <a class="explore btn" href="#FIXME" title="Explore Now"
+                  >Explore Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--city bikes section end-->
+        <!--speciality bikes section start-->
+        <section class="speciality-bikes">
+          <div class="speciality-bikeimg">
+            <div class="speciality-bikecontent">
+              <div class="wrapper">
+                <span>Discover the collection</span>
+                <h3>speciality bikes</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
+                </p>
+                <div class="content-list">
+                  <ul class="content-one">
+                    <li>Officia deserunt mollit</li>
+                    <li>Excepteur sint occaecat</li>
+                    <li>Sunt in culpa qui</li>
+                  </ul>
+                  <ul class="content-two">
+                    <li>Officia deserunt mollit</li>
+                    <li>Excepteur sint occaecat</li>
+                    <li>Sunt in culpa qui</li>
+                  </ul>
+                </div>
+                <a class="explore btn" href="#FIXME" title="Explore Now"
+                  >Explore Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--speciality bikes section end-->
+        <!--why choose section start-->
+        <section class="why-us">
+          <div class="wrapper">
+            <h3>Why choose kryo?</h3>
+            <div class="services">
+              <div class="service-one">
+                <div class="service light-weight">
+                  <h4>Light weight</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+                <div class="service warrenty">
+                  <h4>Lifetime Warrenty</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+              </div>
+              <div class="service-two">
+                <div class="service network">
+                  <h4>Biggest Service Network</h4>
+                </div>
+                <div class="service delivery">
+                  <h4>99% Assembled Delivery</h4>
+                </div>
+                <div class="service free">
+                  <h4>Free First Bike Service</h4>
                 </div>
               </div>
             </div>
-            <div class="banner-redbackground">
-              <span>red background</span>
+          </div>
+        </section>
+        <!--why choose section start-->
+        <!--explore accessories section start-->
+        <section class="explore-accessories">
+          <div class="wrapper">
+            <h3>Explore Accessories</h3>
+            <ul class="accessories-container">
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/accessories-4-800x800.jpg"
+                    class="accessoriesimg"
+                    alt="Accessories"
+                  />
+                  <figcaption class="gloves blue">
+                    <span class="accessories-heading">Accessories</span>
+                    <h4>Bicycle gloves blue</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="accessories">$27.00 - $35.00</span>
+                    <div class="sizes">
+                      <a href="#FIXME" title="Sizw L">L</a>
+                      <a href="#FIXME" title="Sizw M">M</a>
+                      <a href="#FIXME" title="Sizw XL">XL</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/accessories-1-800x800.jpg"
+                    class="accessoriesimg"
+                    alt="Accessories"
+                  />
+                  <figcaption class="glove gold">
+                    <span class="accessories-heading">Accessories</span>
+                    <h4>Bicycle gloves gold</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="accessories">$27.00 - $35.00</span>
+                    <div class="sizes">
+                      <a href="#FIXME" title="Sizw L">L</a>
+                      <a href="#FIXME" title="Sizw M">M</a>
+                      <a href="#FIXME" title="Sizw XL">XL</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/accessories-5-800x800.jpg"
+                    class="accessoriesimg"
+                    alt="Accessories"
+                  />
+                  <figcaption class="glove pink">
+                    <span class="accessories-heading">Accessories</span>
+                    <h4>Bicycle gloves pink</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="accessories">$27.00 - $35.00</span>
+                    <div class="sizes">
+                      <a href="#FIXME" title="Sizw L">L</a>
+                      <a href="#FIXME" title="Sizw M">M</a>
+                      <a href="#FIXME" title="Sizw XL">XL</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/accessories-3-800x800.jpg"
+                    class="accessoriesimg"
+                    alt="Accessories"
+                  />
+                  <figcaption class="glove red">
+                    <span class="accessories-heading">Accessories</span>
+                    <h4>Bicycle gloves red</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="accessories">$30.00 - $50.00</span>
+                    <div class="sizes">
+                      <a href="#FIXME" title="Sizw L">L</a>
+                      <a href="#FIXME" title="Sizw M">M</a>
+                      <a href="#FIXME" title="Sizw XL">XL</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/accessories-6-800x800.jpeg"
+                    class="accessoriesimg"
+                    alt="Accessories"
+                  />
+                  <figcaption class="glove black">
+                    <span class="accessories-heading">Accessories</span>
+                    <h4>Bicycle gloves black</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="accessories">$145.00 - $165.00</span>
+                    <div class="sizes">
+                      <a href="#FIXME" title="Sizw L">L</a>
+                      <a href="#FIXME" title="Sizw M">M</a>
+                      <a href="#FIXME" title="Sizw XL">XL</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/helmet-red.jpg"
+                    class="accessoriesimg"
+                    alt="Accessories"
+                  />
+                  <figcaption class="helmet red">
+                    <span class="accessories-heading">Accessories</span>
+                    <h4>Bicycle helmet red</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="accessories">$145.00 - $165.00</span>
+                    <div class="sizes">
+                      <a href="#FIXME" title="Sizw L">L</a>
+                      <a href="#FIXME" title="Sizw M">M</a>
+                      <a href="#FIXME" title="Sizw XL">XL</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/helmet-blue.jpg"
+                    class="accessoriesimg"
+                    alt="Accessories"
+                  />
+                  <figcaption class="helmet blue">
+                    <span class="accessories-heading">Accessories</span>
+                    <h4>Bicycle helmet black</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="accessories">$145.00 - $165.00</span>
+                    <div class="sizes">
+                      <a href="#FIXME" title="Sizw L">L</a>
+                      <a href="#FIXME" title="Sizw M">M</a>
+                      <a href="#FIXME" title="Sizw XL">XL</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/helmet-neon.jpg"
+                    class="accessoriesimg"
+                    alt="Accessories"
+                  />
+                  <figcaption class="helmet neon">
+                    <span class="accessories-heading">Accessories</span>
+                    <h4>Bicycle helmet neon</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="accessories">$145.00 - $165.00</span>
+                    <div class="sizes">
+                      <a href="#FIXME" title="Sizw L">L</a>
+                      <a href="#FIXME" title="Sizw M">M</a>
+                      <a href="#FIXME" title="Sizw XL">XL</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/helmet-grey.jpg"
+                    class="accessoriesimg"
+                    alt="Accessories"
+                  />
+                  <figcaption class="helmet grey">
+                    <span class="accessories-heading">Accessories</span>
+                    <h4>Bicycle helmet grey</h4>
+                    <ul class="stars">
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                      <li>star</li>
+                    </ul>
+                    <span class="accessories">$145.00 - $165.00</span>
+                    <div class="sizes">
+                      <a href="#FIXME" title="Sizw L">L</a>
+                      <a href="#FIXME" title="Sizw M">M</a>
+                      <a href="#FIXME" title="Sizw XL">XL</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <a class="view btn" href="#FIXME" title="View All">View all</a>
+          </div>
+        </section>
+        <!--explore accessories section end-->
+        <!--programme section start-->
+        <section class="programme">
+          <div class="wrapper">
+            <h3>Join #Goecobiking Programme</h3>
+            <div class="programme-img">
+              <div class="programme-content">
+                <a class="playvideo" href="#FIXME" title="Play Video"
+                  >Play Video</a
+                >
+                <h4>watch full video</h4>
+              </div>
+            </div>
+            <div class="programme-info">
+              <div class="information">
+                <h4>Duis aute irure dolor in reprehenderit velit.</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis.
+                </p>
+              </div>
+              <a class="join btn" href="#FIXME" title="Join The Programme"
+                >Join The Programme</a
+              >
             </div>
           </div>
-        </div>
-      </section>
-      <!--banner section end-->
-      <!--arrivals section start-->
-      <section class="arrivals">
+        </section>
+        <!--programme section end-->
+        <!--shopnow section start-->
+        <section class="shopnow">
+          <div class="shopnow-img">
+            <div class="shopnow-content">
+              <div class="wrapper">
+                <span>The all new</span>
+                <h3>Kryo X26 MTB Is Here</h3>
+                <p>
+                  Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+                  mauris vitae erat consequat auctor eu in elit. Class aptent
+                  taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos. Mauris in erat justo.
+                </p>
+                <a class="shop btn" href="#FIXME" title="Shop Now">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--shopnow section end-->
+      </main>
+      <!--main section end-->
+      <!--footer section start-->
+      <footer>
         <div class="wrapper">
-          <h3>New Arrivals</h3>
-          <ul class="slide-area">
+          <ul class="footer-list">
             <li>
-              <figure>
-                <img src="assets/images/bicycle-7-800x800.jpg" class="bicycleImg" alt="Bicycles">
-                <!-- The Modal -->
-                <div class="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content modal-img">
-                </div>
-                <figcaption class="arrival arrival1">
-                  <span class="arrival-heading">Bicycles</span>
-                  <h4>kryo x26 mtb model k</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="bicycle-price">$350</span>
-                </figcaption>
-              </figure>
+              <h1 class="footer-logo">
+                <a class="homeicon" href="index.html" title="Logo">
+                  <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
+                </a>
+              </h1>
             </li>
-            <li>
-              <figure>
-                <img src="assets/images/bicycle-1-800x800.jpg" class="bicycleImg" alt="Bicycles">
-                <!-- The Modal -->
-                <div class="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content modal-img">
-                </div>
-                <figcaption class="arrival arrival2">
-                  <span class="arrival-heading">Bicycles</span>
-                  <h4>kryo x26 mtb model x</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="bicycle-price">$350</span>
-                </figcaption>
-              </figure>
+            <li class="footer-links">
+              <h4>Usefull Links</h4>
+              <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#FIXME" title="Shop">Shop</a></li>
+                <li><a href="#FIXME" title="About Us">About Us</a></li>
+                <li>
+                  <a href="contact.html" title="Contact Us">Contact Us</a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <figure>
-                <img src="assets/images/bicycle-5-800x800.jpg" class="bicycleImg" alt="Bicycles">
-                <!-- The Modal -->
-                <div class="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content modal-img">
-                </div>
-                <figcaption class="arrival arrival3">
-                  <span class="arrival-heading">Bicycles</span>
-                  <h4>kryo x26 mtb model y</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="bicycle-price">$350</span>
-                </figcaption>
-              </figure>
+            <li class="footer-links">
+              <h4>Our Collection</h4>
+              <ul>
+                <li>
+                  <a href="#FIXME" title="Mountain Bikes">Mountain Bikes</a>
+                </li>
+                <li><a href="#FIXME" title="City Bikes">City Bikes</a></li>
+                <li>
+                  <a href="#FIXME" title="Speciality Bikes">Speciality Bikes</a>
+                </li>
+                <li>
+                  <a href="#FIXME" title="Electric Bikes">Electric Bikes</a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <figure>
-                <img src="assets/images/bicycle-4-800x800.jpg" class="bicycleImg" alt="Bicycles">
-                <!-- The Modal -->
-                <div class="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content modal-img">
-                </div>
-                <figcaption class="arrival arrival4">
-                  <span class="arrival-heading">Bicycles</span>
-                  <h4>kryo x26 mtb model z</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="bicycle-price">$350</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/bicycle-3.jpg" class="bicycleImg" alt="Bicycles">
-                <!-- The Modal -->
-                <div class="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content modal-img">
-                </div>
-                <figcaption class="arrival arrival5">
-                  <span class="arrival-heading">Bicycles</span>
-                  <h4>kryo x26 mtb model a</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="bicycle-price">$350</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/bicycle-8.jpg" class="bicycleImg" alt="Bicycles">
-                <!-- The Modal -->
-                <div class="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content modal-img">
-                </div>
-                <figcaption class="arrival arrival6">
-                  <span class="arrival-heading">Bicycles</span>
-                  <h4>kryo x26 mtb model b</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="bicycle-price">$350</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/bicycle-10.jpg" class="bicycleImg" alt="Bicycles">
-                <!-- The Modal -->
-                <div class="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content modal-img">
-                </div>
-                <figcaption class="arrival arrival7">
-                  <span class="arrival-heading">Bicycles</span>
-                  <h4>kryo x26 mtb model c</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="bicycle-price">$350</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/bicycle-9.jpg" class="bicycleImg" alt="Bicycles">
-                <!-- The Modal -->
-                <div class="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content modal-img">
-                </div>
-                <figcaption class="arrival arrival8">
-                  <span class="arrival-heading">Bicycles</span>
-                  <h4>kryo x26 mtb model d</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="bicycle-price">$350</span>
-                </figcaption>
-              </figure>
+            <li class="footer-links">
+              <h4>Account</h4>
+              <ul>
+                <li>
+                  <a href="#FIXME" title="Customer Login">Customer Login</a>
+                </li>
+                <li><a href="#FIXME" title="Dealer login">Dealer login</a></li>
+                <li><a href="#FIXME" title="Addresses">Addresses</a></li>
+                <li>
+                  <a href="#FIXME" title="Payment Methods">Payment Methods</a>
+                </li>
+              </ul>
             </li>
           </ul>
-        </div>
-      </section>
-      <!--arrivals section end-->
-      <!--mountain bikes section start-->
-      <section class="mountain-bikes">
-        <div class="mountain-bikeimg">
-          <div class="moutain-bikecontent">
-            <div class="wrapper">
-              <span>Discover the collection</span>
-              <h3>mountain bikes</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut elit tellus, luctus nec ullamcorper
-                mattis, pulvinar dapibus.</p>
-              <div class="content-list">
-                <ul class="content-one">
-                  <li>Officia deserunt mollit</li>
-                  <li>Excepteur sint occaecat</li>
-                  <li>Sunt in culpa qui</li>
-                </ul>
-                <ul class="content-two">
-                  <li>Officia deserunt mollit</li>
-                  <li>Excepteur sint occaecat</li>
-                  <li>Sunt in culpa qui</li>
-                </ul>
-              </div>
-              <a class="explore btn" href="#FIXME" title="Explore Now">Explore Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--mountain bikes section end-->
-      <!--city bikes section start-->
-      <section class="city-bikes">
-        <div class="city-bikeimg">
-          <div class="city-bikecontent">
-            <div class="wrapper">
-              <span>Discover the collection</span>
-              <h3>city bikes</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut elit tellus, luctus nec ullamcorper
-                mattis, pulvinar dapibus.</p>
-              <div class="content-list">
-                <ul class="content-one">
-                  <li>Officia deserunt mollit</li>
-                  <li>Excepteur sint occaecat</li>
-                  <li>Sunt in culpa qui</li>
-                </ul>
-                <ul class="content-two">
-                  <li>Officia deserunt mollit</li>
-                  <li>Excepteur sint occaecat</li>
-                  <li>Sunt in culpa qui</li>
-                </ul>
-              </div>
-              <a class="explore btn" href="#FIXME" title="Explore Now">Explore Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--city bikes section end-->
-      <!--speciality bikes section start-->
-      <section class="speciality-bikes">
-        <div class="speciality-bikeimg">
-          <div class="speciality-bikecontent">
-            <div class="wrapper">
-              <span>Discover the collection</span>
-              <h3>speciality bikes</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut elit tellus, luctus nec ullamcorper
-                mattis, pulvinar dapibus.</p>
-              <div class="content-list">
-                <ul class="content-one">
-                  <li>Officia deserunt mollit</li>
-                  <li>Excepteur sint occaecat</li>
-                  <li>Sunt in culpa qui</li>
-                </ul>
-                <ul class="content-two">
-                  <li>Officia deserunt mollit</li>
-                  <li>Excepteur sint occaecat</li>
-                  <li>Sunt in culpa qui</li>
-                </ul>
-              </div>
-              <a class="explore btn" href="#FIXME" title="Explore Now">Explore Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--speciality bikes section end-->
-      <!--why choose section start-->
-      <section class="why-us">
-        <div class="wrapper">
-          <h3>Why choose kryo?</h3>
-          <div class="services">
-            <div class="service-one">
-              <div class="service light-weight">
-                <h4>Light weight</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                  mattis, pulvinar.</p>
-              </div>
-              <div class="service warrenty">
-                <h4>Lifetime Warrenty</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                  mattis, pulvinar.</p>
-              </div>
-            </div>
-            <div class="service-two">
-              <div class="service network">
-                <h4>Biggest Service Network</h4>
-              </div>
-              <div class="service delivery">
-                <h4>99% Assembled Delivery</h4>
-              </div>
-              <div class="service free">
-                <h4>Free First Bike Service</h4>
-              </div>
-            </div>
-          </div>
-      </section>
-      <!--why choose section start-->
-      <!--explore accessories section start-->
-      <section class="explore-accessories">
-        <div class="wrapper">
-          <h3>Explore Accessories</h3>
-          <ul class="accessories-container">
-            <li>
-              <figure>
-                <img src="assets/images/accessories-4-800x800.jpg" class="accessoriesimg" alt="Accessories">
-                <figcaption class="gloves blue">
-                  <span class="accessories-heading">Accessories</span>
-                  <h4>Bicycle gloves blue</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="accessories">$27.00 - $35.00</span>
-                  <div class="sizes">
-                    <a href="#FIXME" title="Sizw L">L</a>
-                    <a href="#FIXME" title="Sizw M">M</a>
-                    <a href="#FIXME" title="Sizw XL">XL</a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/accessories-4-800x800 (1).jpg" class="accessoriesimg" alt="Accessories">
-                <figcaption class="glove gold">
-                  <span class="accessories-heading">Accessories</span>
-                  <h4>Bicycle gloves gold</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="accessories">$27.00 - $35.00</span>
-                  <div class="sizes">
-                    <a href="#FIXME" title="Sizw L">L</a>
-                    <a href="#FIXME" title="Sizw M">M</a>
-                    <a href="#FIXME" title="Sizw XL">XL</a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/accessories-5-800x800.jpg" class="accessoriesimg" alt="Accessories">
-                <figcaption class="glove pink">
-                  <span class="accessories-heading">Accessories</span>
-                  <h4>Bicycle gloves pink</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="accessories">$27.00 - $35.00</span>
-                  <div class="sizes">
-                    <a href="#FIXME" title="Sizw L">L</a>
-                    <a href="#FIXME" title="Sizw M">M</a>
-                    <a href="#FIXME" title="Sizw XL">XL</a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/accessories-3-800x800.jpg" class="accessoriesimg" alt="Accessories">
-                <figcaption class="glove red">
-                  <span class="accessories-heading">Accessories</span>
-                  <h4>Bicycle gloves red</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="accessories">$30.00 - $50.00</span>
-                  <div class="sizes">
-                    <a href="#FIXME" title="Sizw L">L</a>
-                    <a href="#FIXME" title="Sizw M">M</a>
-                    <a href="#FIXME" title="Sizw XL">XL</a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/accessories-6-800x800.jpeg" class="accessoriesimg" alt="Accessories">
-                <figcaption class="glove black">
-                  <span class="accessories-heading">Accessories</span>
-                  <h4>Bicycle gloves black</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="accessories">$145.00 - $165.00</span>
-                  <div class="sizes">
-                    <a href="#FIXME" title="Sizw L">L</a>
-                    <a href="#FIXME" title="Sizw M">M</a>
-                    <a href="#FIXME" title="Sizw XL">XL</a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/helmet-red.jpg" class="accessoriesimg" alt="Accessories">
-                <figcaption class="helmet red">
-                  <span class="accessories-heading">Accessories</span>
-                  <h4>Bicycle helmet red</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="accessories">$145.00 - $165.00</span>
-                  <div class="sizes">
-                    <a href="#FIXME" title="Sizw L">L</a>
-                    <a href="#FIXME" title="Sizw M">M</a>
-                    <a href="#FIXME" title="Sizw XL">XL</a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/helmet-blue.jpg" class="accessoriesimg" alt="Accessories">
-                <figcaption class="helmet blue">
-                  <span class="accessories-heading">Accessories</span>
-                  <h4>Bicycle helmet black</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="accessories">$145.00 - $165.00</span>
-                  <div class="sizes">
-                    <a href="#FIXME" title="Sizw L">L</a>
-                    <a href="#FIXME" title="Sizw M">M</a>
-                    <a href="#FIXME" title="Sizw XL">XL</a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/helmet-neon.jpg" class="accessoriesimg" alt="Accessories">
-                <figcaption class="helmet neon">
-                  <span class="accessories-heading">Accessories</span>
-                  <h4>Bicycle helmet neon</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="accessories">$145.00 - $165.00</span>
-                  <div class="sizes">
-                    <a href="#FIXME" title="Sizw L">L</a>
-                    <a href="#FIXME" title="Sizw M">M</a>
-                    <a href="#FIXME" title="Sizw XL">XL</a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="assets/images/helmet-grey.jpg" class="accessoriesimg" alt="Accessories">
-                <figcaption class="helmet grey">
-                  <span class="accessories-heading">Accessories</span>
-                  <h4>Bicycle helmet grey</h4>
-                  <ul class="stars">
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                  </ul>
-                  <span class="accessories">$145.00 - $165.00</span>
-                  <div class="sizes">
-                    <a href="#FIXME" title="Sizw L">L</a>
-                    <a href="#FIXME" title="Sizw M">M</a>
-                    <a href="#FIXME" title="Sizw XL">XL</a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-          <a class="view btn" href="#FIXME" title="View All">View all</a>
-        </div>
-      </section>
-      <!--explore accessories section end-->
-      <!--programme section start-->
-      <section class="programme">
-        <div class="wrapper">
-          <h3>Join #Goecobiking Programme</h3>
-          <div class="programme-img">
-            <div class="programme-content">
-              <a class="playvideo" href="#FIXME" title="Play Video">Play Video</a>
-              <h4>watch full video</h4>
-            </div>
-          </div>
-          <div class="programme-info">
-            <div class="information">
-              <h4>Duis aute irure dolor in reprehenderit velit.</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
-              </p>
-            </div>
-            <a class="join btn" href="#FIXME" title="Join The Programme">Join The Programme</a>
-          </div>
-        </div>
-      </section>
-      <!--programme section end-->
-      <!--shopnow section start-->
-      <section class="shopnow">
-        <div class="shopnow-img">
-          <div class="shopnow-content">
-            <div class="wrapper">
-              <span>The all new</span>
-              <h3>Kryo X26 MTB Is Here</h3>
-              <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
-                elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris
-                in erat justo.</p>
-              <a class="shop btn" href="#FIXME" title="Shop Now">Shop Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--shopnow section end-->
-    </main>
-    <!--main section end-->
-    <!--footer section start-->
-    <footer>
-      <div class="wrapper">
-        <ul class="footer-list">
-          <li>
-            <h1 class="footer-logo">
-              <a class="homeicon" href="index.html" title="Logo">
-                <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
-              </a>
-            </h1>
-          </li>
-          <li class="footer-links">
-            <h4>Usefull Links</h4>
-            <ul>
-              <li><a href="index.html" title="Home">Home</a></li>
-              <li><a href="#FIXME" title="Shop">Shop</a></li>
-              <li><a href="#FIXME" title="About Us">About Us</a></li>
-              <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+          <div class="copyrights">
+            <p>Copyright &copy; 2022 Cycle Shop</p>
+            <ul class="footersocial-icons">
+              <li class="nav-item">
+                <a
+                  href="#FIXME"
+                  class="footersocial facebook"
+                  title="Facebook"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#FIXME"
+                  class="footersocial twitter"
+                  title="Twitter"
+                  target="_blank"
+                  >Twitter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#FIXME"
+                  class="footersocial instagram"
+                  title="Instagram"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#FIXME"
+                  class="footersocial youtube"
+                  title="Youtube"
+                  target="_blank"
+                  >Youtube</a
+                >
+              </li>
             </ul>
-          </li>
-          <li class="footer-links">
-            <h4>Our Collection</h4>
-            <ul>
-              <li><a href="#FIXME" title="Mountain Bikes">Mountain Bikes</a></li>
-              <li><a href="#FIXME" title="City Bikes">City Bikes</a></li>
-              <li><a href="#FIXME" title="Speciality Bikes">Speciality Bikes</a></li>
-              <li><a href="#FIXME" title="Electric Bikes">Electric Bikes</a></li>
-            </ul>
-          </li>
-          <li class="footer-links">
-            <h4>Account</h4>
-            <ul>
-              <li><a href="#FIXME" title="Customer Login">Customer Login</a></li>
-              <li><a href="#FIXME" title="Dealer login">Dealer login</a></li>
-              <li><a href="#FIXME" title="Addresses">Addresses</a></li>
-              <li><a href="#FIXME" title="Payment Methods">Payment Methods</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="copyrights">
-          <p>Copyright &copy; 2022 Cycle Shop</p>
-          <ul class="footersocial-icons">
-            <li class="nav-item">
-              <a href="#FIXME" class="footersocial facebook" title="Facebook" target="_blank">Facebook</a>
-            </li>
-            <li class="nav-item">
-              <a href="#FIXME" class="footersocial twitter" title="Twitter" target="_blank">Twitter</a>
-            </li>
-            <li class="nav-item">
-              <a href="#FIXME" class="footersocial instagram" title="Instagram" target="_blank">Instagram</a>
-            </li>
-            <li class="nav-item">
-              <a href="#FIXME" class="footersocial youtube" title="Youtube" target="_blank">Youtube</a>
-            </li>
-          </ul>
+          </div>
         </div>
-      </div>
-    </footer>
-    <!--footer section end-->
-  </div>
-  <!--container end-->
-  <!-- slick slider script starts -->
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- slick slider script ends -->
-  <script src="assets/js/script.js"></script>
-</body>
-
+      </footer>
+      <!--footer section end-->
+    </div>
+    <!--container end-->
+    <!-- slick slider script starts -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- slick slider script ends -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
