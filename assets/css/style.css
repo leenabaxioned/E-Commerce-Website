@@ -402,6 +402,15 @@ h3 {
 }
 /* arrivals section styling ends */
 
+/* explore accessories styling starts */
+.accessories-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.accessories-container li { flex-basis: 30%; }
+/* explore accessories styling ends */
 /*=================================
   main styling ends here
 =================================*/
