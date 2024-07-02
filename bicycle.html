@@ -15,6 +15,10 @@
   <!--font-awesome link for icons-->
   <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Material Icon CDN -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+   <!-- slick slider link -->
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
@@ -39,7 +43,7 @@
               <a href="bicycle.html" class="nav-link" title="Bicycles">Bicycles</a>
             </li>
             <li>
-              <a href="#FIXME" class="nav-link" title="Accessories">Accessories</a>
+              <a href="accessory.html" class="nav-link" title="Accessories">Accessories</a>
             </li>
             <a href="#FIXME" class="nav-link" title="About us">About us</a>
             </li>
@@ -67,13 +71,13 @@
     <!--main section start-->
     <main>
       <!--bicycle products section start-->
-      <section class="bicycle-products">
+      <section class="bicycle-products products">
         <div class="filtercontainer">
           <div class="sidebar">
             <div class="searchbox">
               <div class="wrapper">
               <label for="search">Search</label>
-              <input type="text" id="txtSearch" placeholder="Kryo" />
+              <input type="text" class="search" placeholder="Search products..." />
               <button type="submit" class="submit-arrow">submit arrow</button>
             </div>
             </div>
@@ -82,9 +86,9 @@
               <label for="price">Filter by price</label>
               <div class="double_range_slider_box">
                 <div class="double_range_slider">
-                  <span class="range_track" id="range_track"></span>
+                  <span class="range_track" class="range_track"></span>
                   <input type="range" class="min" min="20" max="350" value="0" step="0" />
-                  <input type="range" class="max" min="20" max="350" value="20" step="0" />
+                  <input type="range" class="max" min="20" max="350" value="350" step="0" />
                   <div class="minvalue"></div>
                   <div class="maxvalue"></div>
                   <button type="submit" class="apply">Apply</button>
@@ -108,7 +112,16 @@
             <h3>Bicycles</h3>
             <div class="results">
               <span>showing all 8 results</span>
-              <span>Default sorting</span>
+              <div class="dropdown pages">
+                <a href="#FIXME" class="dropbtn" title="Default sorting"
+                  >Default sorting</a
+                >
+                <div class="dropdown-content">
+                  <a href="#FIXME" title="Link1">Price low to high</a>
+                  <a href="#FIXME" title="Link2">Price high to low</a>
+                  <a href="#FIXME" title="Link3">Sort by latest</a>
+                </div>
+              </div>
             </div>
             <div class="products"></div>
           </div>
@@ -179,6 +192,11 @@
     <!--footer section end-->
   </div>
   <!--container end-->
+    <!-- slick slider script starts -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick slider script ends -->
   <script src="assets/js/script.js"></script>
 </body>
 
