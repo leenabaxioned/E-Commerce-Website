@@ -83,7 +83,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 a { 
@@ -96,16 +96,84 @@ li {
   list-style-type: none;
 }
 
+.btn {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  background-color: #df453e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  border: 1px solid #df453e;
+  background-color: transparent
+}
+
+.capital { text-transform: uppercase; }
+
+
+h2,
+h3 { 
+  font-style: italic;
+  font-weight: 600;
+}
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 88%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+.hompage-header .wrapper,
+.contactpage-header .wrapper,
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.nav-menu a { transition: all 0.3s; }
+.nav-menu a:hover { color: #df453e; }
+
+.hompage-header a,
+.contactpage-header a {
+  color: #fff;
+}
+
+.hompage-header,
+.contactpage-header {
+  width: 100%;
+  position: absolute;
+  top: 3%;
+  left: 0%;
+  z-index: 10;
+}
+
+.head-nav { 
+  flex-basis: 45%; 
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hamburger { display: none; }
+
+.addto {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.addto::after { 
+  font-family: "FontAwesome";
+  content: "\f290";
+  color: #fff;
+  font-size: 25px;
+  text-indent: 0;
+}
 /*=================================
   Header styling ends here
 =================================*/  
