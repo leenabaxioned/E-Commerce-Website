@@ -1,215 +1,334 @@
-<!doctype html>
+<!DOCTYPE html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Contact page</title>
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact page</title>
+    <!-- View-port Basics: http://mzl.la/VYREaP -->
+    <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
-  <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css">
-</head>
-
-<body>
-  <!--container start-->
-  <div class="container">
-    <!--header section start-->
-    <header class="contactpage-header">
-      <div class="wrapper">
-        <h1 class="logo-heading">
-          <a class="homeicon" href="index.html" title="Logo">
-            <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
-          </a>
-        </h1>
-        <nav class="head-nav navigation">
-          <ul class="nav-menu">
-            <li>
-              <a href="index.html" class="nav-link" title="Home">Home</a>
-            </li>
-            <li>
-              <a href="bicycle.html" class="nav-link" title="Bicycles">Bicycles</a>
-            </li>
-            <li>
-              <a href="accessory.html" class="nav-link" title="Accessories">Accessories</a>
-            </li>
-            <a href="#FIXME" class="nav-link" title="About us">About us</a>
-            </li>
-            <li>
-              <a href="contact.html" class="nav-link" title="Contact">Contact</a>
-            </li>
-          </ul>
-          <button class="hamburger">
-            <!-- material icons https://material.io/resources/icons/ -->
-            <i class="menuIcon material-icons">menu</i>
-            <i class="closeIcon material-icons">close</i>
-          </button>
-        </nav>
-        <div class="addto-cart">
-          <a href="#FIXME" class="addto" title="Add to cart">$0.00</a>
-        </div>
-        <div class="hamburger">
-          <span class="line line1">line1</span>
-          <span class="line line2">line2</span>
-          <span class="line line3">line3</span>
-        </div>
-      </div>
-    </header>
-    <!--header section start-->
-    <!--main section start-->
-    <main>
-      <!--banner section start-->
-      <section class="banner">
-        <div class="banner-img">
-          <figure>
-            <img src="assets/images/contactus-banner.jpg" alt="Contact us banner-img" />
-          </figure>
-          <div class="banner-content">
-            <p>Contact Us</p>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!--font-awesome link for icons-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/vendor/font-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Material Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- slick slider link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!--container start-->
+    <div class="container">
+      <!--header section start-->
+      <header class="contactpage-header">
+        <div class="wrapper">
+          <h1 class="logo-heading">
+            <a class="homeicon" href="index.html" title="Logo">
+              <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
+            </a>
+          </h1>
+          <nav class="head-nav navigation">
+            <ul class="nav-menu">
+              <li>
+                <a href="index.html" class="nav-link" title="Home">Home</a>
+              </li>
+              <li>
+                <a href="bicycle.html" class="nav-link" title="Bicycles"
+                  >Bicycles</a
+                >
+              </li>
+              <li>
+                <a href="accessory.html" class="nav-link" title="Accessories"
+                  >Accessories</a
+                >
+              </li>
+              <li>
+                <a href="#FIXME" class="nav-link" title="About us">About us</a>
+              </li>
+              <li>
+                <a href="contact.html" class="nav-link" title="Contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <button class="hamburger">
+              <!-- material icons https://material.io/resources/icons/ -->
+              <i class="menuIcon material-icons">menu</i>
+              <i class="closeIcon material-icons">close</i>
+            </button>
+          </nav>
+          <div class="addto-cart">
+            <a href="#FIXME" class="addto" title="Add to cart">$0.00</a>
+          </div>
+          <div class="hamburger">
+            <span class="line line1">line1</span>
+            <span class="line line2">line2</span>
+            <span class="line line3">line3</span>
           </div>
         </div>
-      </section>
-      <!--banner section end-->
-      <!--enquires section start-->
-      <section class="enquires">
-        <div id="googleMap"></div>
-        <div class="related-queries">
-          <ul>
-            <li>
-              <span class="sales-icon">sales</span>
-              <a class="call" href="tel:+18007556021" title="Call us">1800 755 6021</a>
-              <h3>Sales Related Enquiries</h3>
-            </li>
-            <li>
-              <span class="service-icon">service</span>
-              <a class="call" href="tel:+18007556022" title="Call us">1800 755 6022</a>
-              <h3>Service Related Enquiries</h3>
-            </li>
-            <li>
-              <span class="deal-icon">deal</span>
-              <a class="call" href="tel:+18007556023" title="Call us">1800 755 6023</a>
-              <h3>Dealership Related Enquiries</h3>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--enquires section end-->
-      <!--contact-details section start-->
-      <section class="contact-details">
-        <div class="wrapper">
-          <div class="detail">
-            <form action="javascript:void(0);">
-              <h3>Let's Get In Touch</h3>
-              <div class="names">
-                <div class="firstname">
-                  <input type="text" id="fname" name="fname" placeholder="First name" />
+      </header>
+      <!--header section start-->
+      <!--main section start-->
+      <main>
+        <!--banner section start-->
+        <section class="banner">
+          <div class="banner-img">
+            <figure>
+              <img
+                src="assets/images/contactus-banner.jpg"
+                alt="Contact us banner-img"
+              />
+            </figure>
+            <div class="banner-content">
+              <p>Contact Us</p>
+            </div>
+          </div>
+        </section>
+        <!--banner section end-->
+        <!--enquires section start-->
+        <section class="enquires">
+          <div id="googleMap"></div>
+          <div class="related-queries">
+            <ul>
+              <li>
+                <span class="sales-icon">sales</span>
+                <a class="call" href="tel:+18007556021" title="Call us"
+                  >1800 755 6021</a
+                >
+                <h3>Sales Related Enquiries</h3>
+              </li>
+              <li>
+                <span class="service-icon">service</span>
+                <a class="call" href="tel:+18007556022" title="Call us"
+                  >1800 755 6022</a
+                >
+                <h3>Service Related Enquiries</h3>
+              </li>
+              <li>
+                <span class="deal-icon">deal</span>
+                <a class="call" href="tel:+18007556023" title="Call us"
+                  >1800 755 6023</a
+                >
+                <h3>Dealership Related Enquiries</h3>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--enquires section end-->
+        <!--contact-details section start-->
+        <section class="contact-details">
+          <div class="wrapper">
+            <div class="detail">
+              <form action="javascript:void(0);">
+                <h3>Let's Get In Touch</h3>
+                <div class="names">
+                  <div class="firstname">
+                    <input
+                      type="text"
+                      id="fname"
+                      name="fname"
+                      placeholder="First name"
+                    />
+                  </div>
+                  <div class="lastname">
+                    <input
+                      type="text"
+                      id="lname"
+                      name="lname"
+                      placeholder="Last name"
+                    />
+                  </div>
                 </div>
-                <div class="lastname">
-                  <input type="text" id="lname" name="lname" placeholder="Last name" />
+                <div class="email-id">
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email address"
+                  />
                 </div>
-              </div>
-              <div class="email-id">
-                <input type="text" id="email" name="email" placeholder="Enter email address" />
-              </div>
-              <div class="form-message">
-                <textarea name="message" id="message" rows="8" cols="40" placeholder="Enter your message"></textarea>
-              </div>
-              <button class="send" type="submit" value="Send">Send Message</button>
-            </form>
-            <div class="detail-info">
-              <h3>Contact Details</h3>
-              <div class="info timings">
-                <h4>our hours</h4>
-                <span>10:00 AM - 22.00</span>
-                <span>Monday - Friday</span>
-              </div>
-              <div class="info address">
-                <h4>Location</h4>
-                <address>212 7th St SE, Washington, DC 20003, USA</address>
-              </div>
-              <div class="info contactus">
-                <h4>Contact Us</h4>
-                <span>Phone: <a class="callus" href="tel:+18007556020" title="Call us">1 800 755 60 20</a></span>
-                <span>Email: <a class="mail" href="mailto:contact@company.com"
-                    title="Mail us">contact@company.com</a></span>
+                <div class="form-message">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="8"
+                    cols="40"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <button class="send" type="submit" value="Send">
+                  Send Message
+                </button>
+              </form>
+              <div class="detail-info">
+                <h3>Contact Details</h3>
+                <div class="info timings">
+                  <h4>our hours</h4>
+                  <span>10:00 AM - 22.00</span>
+                  <span>Monday - Friday</span>
+                </div>
+                <div class="info address">
+                  <h4>Location</h4>
+                  <address>212 7th St SE, Washington, DC 20003, USA</address>
+                </div>
+                <div class="info contactus">
+                  <h4>Contact Us</h4>
+                  <span
+                    >Phone:
+                    <a class="callus" href="tel:+18007556020" title="Call us"
+                      >1 800 755 60 20</a
+                    ></span
+                  >
+                  <span
+                    >Email:
+                    <a
+                      class="mail"
+                      href="mailto:contact@company.com"
+                      title="Mail us"
+                      >contact@company.com</a
+                    ></span
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!--contact-details section end-->
-    </main>
-    <!--main section end-->
-    <!--footer section start-->
-    <footer>
-      <div class="wrapper">
-        <ul class="footer-list">
-          <li>
-            <h1 class="footer-logo">
-              <a class="homeicon" href="index.html" title="Logo">
-                <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
-              </a>
-            </h1>
-          </li>
-          <li class="footer-links">
-            <h4>Usefull Links</h4>
-            <ul>
-              <li><a href="index.html" title="Home">Home</a></li>
-              <li><a href="#FIXME" title="Shop">Shop</a></li>
-              <li><a href="#FIXME" title="About Us">About Us</a></li>
-              <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
-            </ul>
-          </li>
-          <li class="footer-links">
-            <h4>Our Collection</h4>
-            <ul>
-              <li><a href="#FIXME" title="Mountain Bikes">Mountain Bikes</a></li>
-              <li><a href="#FIXME" title="City Bikes">City Bikes</a></li>
-              <li><a href="#FIXME" title="Speciality Bikes">Speciality Bikes</a></li>
-              <li><a href="#FIXME" title="Electric Bikes">Electric Bikes</a></li>
-            </ul>
-          </li>
-          <li class="footer-links">
-            <h4>Account</h4>
-            <ul>
-              <li><a href="#FIXME" title="Customer Login">Customer Login</a></li>
-              <li><a href="#FIXME" title="Dealer login">Dealer login</a></li>
-              <li><a href="#FIXME" title="Addresses">Addresses</a></li>
-              <li><a href="#FIXME" title="Payment Methods">Payment Methods</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="copyrights">
-          <p>Copyright &copy; 2022 Cycle Shop</p>
-          <ul class="footersocial-icons">
-            <li class="nav-item">
-              <a href="#FIXME" class="footersocial facebook" title="Facebook" target="_blank">Facebook</a>
+        </section>
+        <!--contact-details section end-->
+      </main>
+      <!--main section end-->
+      <!--footer section start-->
+      <footer>
+        <div class="wrapper">
+          <ul class="footer-list">
+            <li>
+              <h1 class="footer-logo">
+                <a class="homeicon" href="index.html" title="Logo">
+                  <img src="assets/images/logo-1-80x48.png" alt="Logo image" />
+                </a>
+              </h1>
             </li>
-            <li class="nav-item">
-              <a href="#FIXME" class="footersocial twitter" title="Twitter" target="_blank">Twitter</a>
+            <li class="footer-links">
+              <h4>Usefull Links</h4>
+              <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#FIXME" title="Shop">Shop</a></li>
+                <li><a href="#FIXME" title="About Us">About Us</a></li>
+                <li>
+                  <a href="contact.html" title="Contact Us">Contact Us</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a href="#FIXME" class="footersocial instagram" title="Instagram" target="_blank">Instagram</a>
+            <li class="footer-links">
+              <h4>Our Collection</h4>
+              <ul>
+                <li>
+                  <a href="#FIXME" title="Mountain Bikes">Mountain Bikes</a>
+                </li>
+                <li><a href="#FIXME" title="City Bikes">City Bikes</a></li>
+                <li>
+                  <a href="#FIXME" title="Speciality Bikes">Speciality Bikes</a>
+                </li>
+                <li>
+                  <a href="#FIXME" title="Electric Bikes">Electric Bikes</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a href="#FIXME" class="footersocial youtube" title="Youtube" target="_blank">Youtube</a>
+            <li class="footer-links">
+              <h4>Account</h4>
+              <ul>
+                <li>
+                  <a href="#FIXME" title="Customer Login">Customer Login</a>
+                </li>
+                <li><a href="#FIXME" title="Dealer login">Dealer login</a></li>
+                <li><a href="#FIXME" title="Addresses">Addresses</a></li>
+                <li>
+                  <a href="#FIXME" title="Payment Methods">Payment Methods</a>
+                </li>
+              </ul>
             </li>
           </ul>
+          <div class="copyrights">
+            <p>Copyright &copy; 2022 Cycle Shop</p>
+            <ul class="footersocial-icons">
+              <li class="nav-item">
+                <a
+                  href="#FIXME"
+                  class="footersocial facebook"
+                  title="Facebook"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#FIXME"
+                  class="footersocial twitter"
+                  title="Twitter"
+                  target="_blank"
+                  >Twitter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#FIXME"
+                  class="footersocial instagram"
+                  title="Instagram"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#FIXME"
+                  class="footersocial youtube"
+                  title="Youtube"
+                  target="_blank"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </footer>
-    <!--footer section end-->
-  </div>
-  <!--container end-->
-  <script src="assets/js/script.js"></script>
-</body>
-
+      </footer>
+      <!--footer section end-->
+    </div>
+    <!--container end-->
+    <!-- slick slider script starts -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- slick slider script ends -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
