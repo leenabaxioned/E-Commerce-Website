@@ -129,6 +129,9 @@ h3 {
   Header styling starts here
 =================================*/
 .hompage-header .wrapper,
+.contactpage-header .wrapper { width: 88%; }
+
+.hompage-header .wrapper,
 .contactpage-header .wrapper,
 .nav-menu {
   display: flex;
@@ -148,7 +151,7 @@ h3 {
 .contactpage-header {
   width: 100%;
   position: absolute;
-  top: 3%;
+  top: 4%;
   left: 0%;
   z-index: 10;
 }
@@ -165,13 +168,14 @@ h3 {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-weight: 600;
 }
 
 .addto::after { 
   font-family: "FontAwesome";
   content: "\f290";
   color: #fff;
-  font-size: 25px;
+  font-size: 35px;
   text-indent: 0;
 }
 /*=================================
@@ -210,10 +214,10 @@ h3 {
 }
 
 .description {
-  width: 50%;
+  width: 75%;
   display: block;
-  padding: 10px 0 20px 0;
-  font-size: 60px;
+  padding: 15px 0 30px 0;
+  font-size: 70px;
 }
 
 .specifications span {
@@ -232,7 +236,6 @@ h3 {
 
 .specifications ul li {
   display: flex;
-  align-items: center;
   gap: 15px;
 }
 
@@ -243,6 +246,7 @@ h3 {
   text-indent: 0;
 }
 /* banner section styling starts */
+
 /* arrivals section styling starts */
 .arrivals { 
   margin: 100px auto;
@@ -253,7 +257,8 @@ h3 {
   display: block;
   padding: 10px 0;
   color: #b0b3b7;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .arrival h4 {
@@ -274,15 +279,20 @@ h3 {
   font-family: "FontAwesome";
   content: "\f005";
   color: #4b4f58;
-  font-size: 15px;
+  font-size: 13px;
   text-indent: 0;
 }
+
+.arrival2 .stars li:nth-child(5):after { color: #b0b3b7;}
+.arrival3 .stars li:nth-child(4):after { color: #b0b3b7;}
+.arrival3 .stars li:nth-child(5):after { color: #b0b3b7;}
 
 .bicycle-price {
   display: block;
   padding-top: 5px;
   color: #4b4f58;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .slick-slide { margin-right: 20px; }
@@ -316,18 +326,16 @@ h3 {
 }
 
 .slide-area .slick-arrow:hover { 
-  border: 1px solid #0e1111;
-  background: #fff;
+  border: 1px solid #df453e;
+  background: #df453e;
  }
-
- .slide-area .slick-arrow:hover::before { color: #0e1111; }
 
 .slide-area .slick-arrow::before {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   text-indent: 0;
   transition: all 0.3s;
@@ -403,8 +411,100 @@ h3 {
 }
 /* arrivals section styling ends */
 
+/* mountain bikes, city bikes, speciality bikes section styling starts */
+.moutain-bikecontent span,
+.city-bikecontent span,
+.speciality-bikecontent span {
+  font-size: 18px;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+.moutain-bikecontent h3,
+.city-bikecontent h3,
+.speciality-bikecontent h3 {
+  padding: 30px 0;
+  font-size: 36px;
+}
+
+.moutain-bikecontent p,
+.city-bikecontent p,
+.speciality-bikecontent p { 
+  width: 68%;
+  font-size: 16px; 
+  line-height: 1.7;
+}
+
+.content-list {
+  padding: 35px 0;
+  display: flex;
+  gap: 50px;
+}
+
+.content-list ul {
+  padding: 15px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.content-list ul li {
+  display: flex;
+  gap: 15px;
+}
+
+.content-list ul li::before { 
+  font-family: "FontAwesome";
+  content: "\f140";
+  color: #df453e;
+  text-indent: 0;
+}
+
+.mountain-bikeimg,
+.city-bikeimg,
+.speciality-bikeimg {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.mountain-bikeimg::before,
+.city-bikeimg::before,
+.speciality-bikeimg::before {    
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.mountain-bikeimg::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/moutain-bike.jpg"); }
+.city-bikeimg::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/city-bike.jpg"); }
+.speciality-bikeimg::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/speciality-bike.jpg"); }
+
+.moutain-bikecontent,
+.city-bikecontent,
+.speciality-bikecontent { 
+  position: relative; 
+  top: 1%;
+  left: 2%;
+  color: #fff;
+}
+
+/* mountain bikes, city bikes, speciality bikes section styling ends */
+
 /* why choose kryo styling starts */
-.why-us { padding: 100px 0; }
+.why-us { padding: 90px 0; }
 
 .why-us h3 {
   padding-bottom: 50px;
@@ -469,6 +569,94 @@ h3 {
   line-height: 1.5;
 }
 /* why choose kryo styling ends */
+
+/* explore accessories styling starts */
+.explore-accessories { padding-bottom: 90px; }
+
+.explore-accessories .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accessories-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.accessory-list { flex-basis: 23%; }
+
+.accessories-heading{
+  display: block;
+  padding: 10px 0;
+  color: #b0b3b7;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.accessory-list h4 {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.accessory-list .stars { display: flex; }
+
+.accessory-list .stars li {
+  display: flex;
+  text-indent: -9999px;
+}
+
+.accessory-list .stars li::after { 
+  font-family: "FontAwesome";
+  content: "\f005";
+  color: #4b4f58;
+  font-size: 13px;
+  text-indent: 0;
+}
+
+.gold .stars li:nth-child(5):after { color: #b0b3b7;}
+.pink .stars li:nth-child(4):after { color: #b0b3b7;}
+.pink .stars li:nth-child(5):after { color: #b0b3b7;}
+
+.accessories {
+  display: block;
+  padding: 5px 0 15px;
+  color: #4b4f58;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sizes {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sizes a {
+  padding: 5px 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  color: #4b4f58;
+  font-size: 12px;
+  transition: all 0.3s;
+}
+
+.sizes a:hover {
+  border: 1px solid #0e1111;
+  background-color: #0e1111;
+  color: #fff;
+}
+
+.explore-accessories h3 {
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+
+.view { margin-top: 40px; }
+/* explore accessories styling ends */
 
 /* programme section styling starts */
 .programme { 
@@ -602,88 +790,6 @@ h3 {
   line-height: 1.5;
 }
 /* shop now section styling ends */
-
-/* explore accessories styling starts */
-.explore-accessories { margin: 100px auto; }
-
-.explore-accessories .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.accessories-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.accessory-list { flex-basis: 23%; }
-
-.accessories-heading{
-  display: block;
-  padding: 10px 0;
-  color: #b0b3b7;
-  font-size: 15px;
-}
-
-.accessory-list h4 {
-  padding-bottom: 10px;
-  font-size: 15px;
-  font-style: italic;
-  font-weight: 600;
-}
-
-.accessory-list .stars { display: flex; }
-
-.accessory-list .stars li {
-  display: flex;
-  text-indent: -9999px;
-}
-
-.accessory-list .stars li::after { 
-  font-family: "FontAwesome";
-  content: "\f005";
-  color: #4b4f58;
-  font-size: 15px;
-  text-indent: 0;
-}
-
-.accessories {
-  display: block;
-  padding: 10px 0 15px;
-  color: #4b4f58;
-  font-size: 15px;
-}
-
-.sizes {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.sizes a {
-  padding: 5px 10px;
-  border: 1px solid #dfdfdf;
-  border-radius: 2px;
-  color: #4b4f58;
-  font-size: 12px;
-  transition: all 0.3s;
-}
-
-.sizes a:hover {
-  border: 1px solid #0e1111;
-  background-color: #0e1111;
-  color: #fff;
-}
-
-.explore-accessories h3 {
-  padding-bottom: 50px;
-  font-size: 50px;
-}
-
-.view { margin: 40px 0; }
-/* explore accessories styling ends */
 
 /* ---------------------------------index page and contact page main styling ends------------------------------ */
 /*=================================
