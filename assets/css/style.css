@@ -792,6 +792,70 @@ h3 {
 /* shop now section styling ends */
 
 /* ---------------------------------index page and contact page main styling ends------------------------------ */
+
+/*-----------------contactpage main sections styling stats------------------------ */
+.contactpage .banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contactpage .banner-content h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#googleMap iframe{
+  width: 100%;
+  height: 385px;
+}
+
+.related-queries { padding: 100px 0; }
+.related-queries .wrapper { width: 71%; }
+
+.related-queries ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.related-queries li span{
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-indent: -9999px;
+}
+
+.related-queries li span::after { 
+  font-family: "FontAwesome";
+  color: #df453e;
+  font-size: 30px;
+  text-indent: 0;
+}
+
+.sales-icon::after {  content: "\f0d1"; }
+.service-icon::after {  content: "\f0b1"; }
+.deal-icon::after {  content: "\f0b1"; }
+
+.call {
+  padding-bottom: 10px;
+  color: #000;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.related-queries h3 {
+  font-size: 16px;
+  color: #7d8389;
+  font-style: normal;
+}
+/*-----------------contactpage main sections styling ends------------------------ */
 /*=================================
   main styling ends here
 =================================*/
