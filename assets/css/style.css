@@ -403,14 +403,86 @@ h3 {
 /* arrivals section styling ends */
 
 /* explore accessories styling starts */
+.explore-accessories { margin: 100px auto; }
+
+.explore-accessories .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .accessories-container {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
-.accessories-container li { flex-basis: 30%; }
-/* explore accessories styling ends */
+.accessory-list { flex-basis: 23%; }
+
+.accessories-heading{
+  display: block;
+  padding: 10px 0;
+  color: #b0b3b7;
+  font-size: 15px;
+}
+
+.accessory-list h4 {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.accessory-list .stars { display: flex; }
+
+.accessory-list .stars li {
+  display: flex;
+  text-indent: -9999px;
+}
+
+.accessory-list .stars li::after { 
+  font-family: "FontAwesome";
+  content: "\f005";
+  color: #4b4f58;
+  font-size: 15px;
+  text-indent: 0;
+}
+
+.accessories {
+  display: block;
+  padding: 10px 0 15px;
+  color: #4b4f58;
+  font-size: 15px;
+}
+
+.sizes {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.sizes a {
+  padding: 5px 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  color: #4b4f58;
+  font-size: 12px;
+  transition: all 0.3s;
+}
+
+.sizes a:hover {
+  border: 1px solid #0e1111;
+  background-color: #0e1111;
+  color: #fff;
+}
+
+.explore-accessories h3 {
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+
+.view { margin: 40px 0; }
+/* .accessories-container { display: none; } */
 /*=================================
   main styling ends here
 =================================*/
@@ -418,7 +490,66 @@ h3 {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer { background-color: #161616; }
+.footer-list {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer-links ul {
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer a { transition: all 0.3s; }
+footer a:hover { color: #df453e; }
+
+footer a,
+footer p,
+.footer-links h4 { color: #fff; }
+
+.copyrights .wrapper {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyrights::before {
+  display: inline-block;
+  content: "";
+  width: 100%;
+  border-top: 1px solid #2d2d2d;
+}
+
+footer p { font-size: 15px; }
+.footer-links h4 { font-size: 20px; }
+.footer-list li { flex-basis: 30%; }
+
+.footersocial {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-indent: -9999px;
+}
+
+.footersocial::after { 
+  font-family: "FontAwesome";
+  color: #fff;
+  font-size: 20px;
+  text-indent: 0;
+  transition: all 0.3s;
+}
+
+.footersocial:hover::after { color: #df453e; }
+
+.facebook:after { content: "\f09a"; }
+.twitter:after { content: "\f099"; }
+.instagram:after { content: "\f16d"; }
+.youtube:after { content: "\f167"; }
  /*=================================
   footer styling ends here
 =================================*/ 
