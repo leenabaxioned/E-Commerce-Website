@@ -181,6 +181,7 @@ h3 {
 /*=================================
   main styling starts here
 =================================*/
+/* ---------------------------------index page and contact page main styling starts------------------------------ */
 /* banner section styling starts */
 .banner { position: relative; }
 
@@ -402,6 +403,206 @@ h3 {
 }
 /* arrivals section styling ends */
 
+/* why choose kryo styling starts */
+.why-us { padding: 100px 0; }
+
+.why-us h3 {
+  padding-bottom: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.service-one,
+.service-two {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.service {
+  position: relative; 
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.service::before {    
+  content: "";
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.service-one .service { height: 55vh; }
+.service-two .service { height: 35vh; }
+
+.light-weight::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo1.jpg"); }
+.warrenty::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo2.jpg"); }
+.network::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo3.jpg"); }
+.delivery::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo4.jpg"); }
+.free::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo5.jpg"); }
+
+.service-content { 
+  position: relative; 
+  padding: 35px 50px;
+  color: #fff;
+}
+
+.service-one .service-content h4 {
+  padding-bottom: 10px;
+  font-size: 28px;
+ }
+
+.service-two .service-content h4 { font-size: 18px; }
+
+.service-content p {
+  font-size: 16px;  
+  line-height: 1.5;
+}
+/* why choose kryo styling ends */
+
+/* programme section styling starts */
+.programme { 
+  padding: 100px 0;
+  background-color: #f5f5f5;
+ }
+
+.programme .wrapper { width: 73%; }
+
+.programme h3 {
+  padding-bottom: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.programme-img {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.programme-img::before {    
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/join-programme.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.programme-content { 
+  position: relative; 
+  padding: 35px 50px;
+  color: #fff;
+}
+
+.programme h4 {
+  font-size: 28px; 
+  line-height: 1.2;
+} 
+
+.playvideo {
+  display: flex;
+  padding-bottom: 25px;
+  text-indent: -9999px;
+}
+  
+.playvideo::after { 
+  font-family: "FontAwesome";
+  content: "\f144";
+  color: #fff;
+  font-size: 60px;
+  text-indent: 0;
+}
+
+.programme-info {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information { flex-basis: 48%; }
+.information h4 { padding-bottom: 15px; }
+
+.information p {
+  font-size: 16px;
+  color: #555768;
+  line-height: 1.5;
+}
+/* programme styling ends */
+
+/* shop now section styling starts */
+.shopnow-content {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopnow-content::before {    
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/bike-hero.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.shopnow-content .wrapper {
+  position: relative;
+  width: 74%;
+  color: #ffffff;  
+  font-size: 15px;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.shopnow-content h3 {
+  padding: 30px 0; 
+  font-size: 50px; 
+}
+
+.shopnow-content span {
+  display: block;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.shopnow-content p {
+  padding-bottom: 35px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* shop now section styling ends */
+
 /* explore accessories styling starts */
 .explore-accessories { margin: 100px auto; }
 
@@ -482,7 +683,9 @@ h3 {
 }
 
 .view { margin: 40px 0; }
-/* .accessories-container { display: none; } */
+/* explore accessories styling ends */
+
+/* ---------------------------------index page and contact page main styling ends------------------------------ */
 /*=================================
   main styling ends here
 =================================*/
