@@ -96,8 +96,15 @@ li {
   list-style-type: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .btn {
-  padding: 10px 20px;
+  padding: 13px 23px;
   border: 1px solid transparent;
   background-color: #df453e;
   color: #fff;
@@ -107,22 +114,23 @@ li {
 }
 
 .btn:hover {
-  border: 1px solid #df453e;
-  background-color: transparent
+  border: 1px solid #c4180f;
+  background-color: #c4180f
 }
 
 .capital { text-transform: uppercase; }
 
 
 h2,
-h3 { 
+h3,
+h4 { 
   font-style: italic;
   font-weight: 600;
 }
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 88%; 
+  width: 86%; 
   margin: 0 auto;
 }
 /*=================================
@@ -133,30 +141,41 @@ h3 {
 
 .hompage-header .wrapper,
 .contactpage-header .wrapper,
-.nav-menu {
+.nav-menu,
+.bicyclepage-header .wrapper,
+.accessorypage .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.bicyclepage-header,
+.accessorypage { 
+  padding: 15px 0;
+  background-color: #df453e;
+ }
+
 .nav-menu a { transition: all 0.3s; }
 .nav-menu a:hover { color: #df453e; }
+.bicyclepage-header .nav-menu a:hover,
+.accessorypage .nav-menu a:hover { color: #D3D3D3; }
 
 .hompage-header a,
-.contactpage-header a {
-  color: #fff;
-}
+.contactpage-header a,
+.bicyclepage-header a,
+.accessorypage a { color: #fff; }
 
 .hompage-header,
 .contactpage-header {
   width: 100%;
   position: absolute;
-  top: 4%;
+  top: 20px;
   left: 0%;
   z-index: 10;
 }
 
-.head-nav { 
+.head-nav,
+.bicyclepage-header .head-nav { 
   flex-basis: 45%; 
   font-size: 16px;
   font-weight: 600;
@@ -177,7 +196,10 @@ h3 {
   color: #fff;
   font-size: 35px;
   text-indent: 0;
+  transition: all 0.3s;
 }
+
+.addto:hover::after { color: #D3D3D3; }
 /*=================================
   Header styling ends here
 =================================*/  
@@ -185,25 +207,64 @@ h3 {
 /*=================================
   main styling starts here
 =================================*/
-/* ---------------------------------index page and contact page main styling starts------------------------------ */
 /* banner section styling starts */
-.banner { position: relative; }
+.banner { 
+  position: relative;
+  height: 100%;
+ }
+
+/* .banner-content {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  color: #fff;
+}
+
+.banner-img {
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.banner-img::before {    
+  content: "";
+  background-image: linear-gradient(to right, rgba(23, 26, 26, 0.5) 50%, rgba(255, 83, 79, 0.5) 50%), url("/assets/images/bike-hero.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.banner-content { 
+  position: relative; 
+  color: #fff;
+} */
 
 .homepage .banner-content {
   position: absolute;
   top: 0;
-  height: 965px;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5); 
   background-image: linear-gradient(to right, rgba(23, 26, 26, 0.5) 50%, rgba(255, 83, 79, 0.5) 50%);
   z-index: 1; 
 }
 
+.banner-img { height: 100%; }
+
 .homepage .banner-content .wrapper {
   position: absolute;
-  top: 10%;
-  left: 6%;
-  width: 50%;
+  top: 100px;
+  left: 70px;
   color: #fff;
 }
 
@@ -214,7 +275,7 @@ h3 {
 }
 
 .description {
-  width: 75%;
+  width: 37%;
   display: block;
   padding: 15px 0 30px 0;
   font-size: 70px;
@@ -300,8 +361,8 @@ h3 {
 .slick-slide img {
   display: block;
   object-fit: cover;
-  width: 100%;
-  height: auto;
+  width: 278px;
+  height: 278px;
 }
 
 .slide-area { position: relative; }
@@ -465,7 +526,7 @@ h3 {
 .city-bikeimg,
 .speciality-bikeimg {
   position: relative; 
-  height: 100vh;
+  height: 700px;
   width: 100%;
   display: flex;
   justify-content: left;
@@ -477,7 +538,7 @@ h3 {
 .speciality-bikeimg::before {    
   content: "";
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -496,8 +557,7 @@ h3 {
 .city-bikecontent,
 .speciality-bikecontent { 
   position: relative; 
-  top: 1%;
-  left: 2%;
+  padding-left: 25px;
   color: #fff;
 }
 
@@ -542,8 +602,8 @@ h3 {
   left: 0px;
 }
 
-.service-one .service { height: 55vh; }
-.service-two .service { height: 35vh; }
+.service-one .service { height: 400px; }
+.service-two .service { height: 225px; }
 
 .light-weight::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo1.jpg"); }
 .warrenty::before { background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo2.jpg"); }
@@ -739,20 +799,20 @@ h3 {
 /* programme styling ends */
 
 /* shop now section styling starts */
-.shopnow-content {
+.shopnow-img {
   position: relative; 
-  height: 100vh;
   width: 100%;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.shopnow-content::before {    
+.shopnow-img::before {    
   content: "";
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/bike-hero.jpg");
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -791,9 +851,9 @@ h3 {
 }
 /* shop now section styling ends */
 
-/* ---------------------------------index page and contact page main styling ends------------------------------ */
-
 /*-----------------contactpage main sections styling stats------------------------ */
+.contactpage .banner-img img { height: 407px; }
+
 .contactpage .banner-content {
   position: absolute;
   top: 50%;
@@ -803,7 +863,7 @@ h3 {
 
 .contactpage .banner-content h2 {
   color: #fff;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
 }
 
@@ -812,7 +872,12 @@ h3 {
   height: 385px;
 }
 
-.related-queries { padding: 100px 0; }
+.related-queries {
+  display: flex;
+  align-items: center;
+  height: 441px;
+}
+
 .related-queries .wrapper { width: 71%; }
 
 .related-queries ul {
@@ -855,7 +920,389 @@ h3 {
   color: #7d8389;
   font-style: normal;
 }
+
+/* contact details section styling starts */
+.contact-details {
+  position: relative;
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+
+.contact-details .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-details form { 
+  position: absolute;
+  bottom: 24%;
+  padding: 70px 62px 80px;
+  flex-basis: 40%; 
+  background-color: #fff;
+  box-shadow: 0px 4px 5px #D3D3D3;
+}
+
+.contact-details form h3 {
+  padding-bottom: 40px;
+  font-size: 40px;
+}
+
+
+.detail-info { flex-basis: 41%; }
+
+.detail-info h3 {
+  padding-bottom: 40px;
+  font-size: 40px;
+}
+
+.info {
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info:last-child { padding-bottom: 0; }
+
+.info h4 {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.info span,
+.info address {
+  padding-bottom: 10px;
+  color: #4b4f58;
+  font-size: 16px;
+}
+
+.contactus a { 
+  color: #4b4f58; 
+  transition: all 0.3s;
+}
+
+.contactus a:hover { color: #c4180f; }
+
+.detail input[type=text], textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #DADADA;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+textarea { resize: none; }
+
+.detail form ::placeholder { 
+  color: #787a8b;
+  font-size: 17px;
+}
+
+.names {
+  display: flex;
+  gap: 20px;
+}
+
+.firstname,
+.lastname { flex-basis: 50%; }
+
+.input-border {
+  border: 1.5px solid #FF0000;
+  border-radius: 2px;
+}
+.div-span {
+  display: block;
+  padding-bottom: 10px;
+  color: #FF0000;
+  font-size: 10px;
+}
 /*-----------------contactpage main sections styling ends------------------------ */
+
+/* ----------------bicycle page main styling starts------------------------------ */
+.products {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+}
+
+.products .wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.filtercontainer {
+  display: flex;
+  gap: 30px;
+}
+
+.filter-content {
+  padding: 90px;
+  flex-basis: 56%;
+  background-color: #fff;
+  }
+
+.filter-content .wrapper { width: 100%; }
+
+.sidebar { 
+  flex-basis: 28%; 
+  color: #51535a;
+}
+
+.searchfield {
+  display: flex;
+  gap: 5px;
+}
+
+.searchtext {
+  display: block;
+  padding-bottom: 4px;
+  font-size: 17px;
+}
+
+.filtertext {
+  display: block;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+  
+
+.searchbox,
+.price,
+.category {
+  padding: 35px 25px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.searchfield input[type=text] {
+  width: 100%;
+  padding: 13px 10px;
+  display: inline-block;
+  border: 1px solid #DADADA;
+}
+
+.searchfield ::placeholder { 
+  color: #66666b;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.submit-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 45px;
+  border: 1px solid transparent;
+  background-color: #df453e;
+  text-indent: -9999px;
+}
+
+.submit-arrow::after { 
+  font-family: "FontAwesome";
+  content: "\3e";
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  text-indent: 0;
+  transition: all 0.3s;
+}
+
+.products-info {
+  padding: 50px 0;
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.products-info > li { flex-basis: 30%; }
+.products-info img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.range {
+  padding-bottom: 40px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.range input[type=range] {
+  width: 100%;
+  height: 7px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: 0;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+
+.range input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; }
+.range input[type=range]:active,
+.range input[type=range]:focus { outline: 0; }
+
+.range input[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: 0;
+  pointer-events: none;
+}
+.range input[type=range]::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border: 7px solid #df453e;
+  border-radius: 50%;
+  margin: 0;
+  margin-top: -4px;
+  position: relative;
+  z-index: 100;
+  background-color: #df453e;
+  cursor: pointer;
+  outline: 0;
+  pointer-events: all;
+  -webkit-appearance: none;
+}
+.range input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background: #df453e;
+  cursor: pointer;
+}
+.range input[type=range]:hover::-webkit-slider-thumb {
+  box-shadow: 0 0 0 0.5px #242424;
+  transition-duration: 0.3s;
+}
+.range input[type=range]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 0.5px #242424;
+  transition-duration: 0.3s;
+}
+.range input[type=range] {
+  width: 100%;
+  position: absolute;
+}
+.min { left: -2%; }
+.max { right: 0%; }
+
+.low-high { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  font-size: 15px;
+  font-weight: 600;
+ }
+/* filter price range end */
+.filter-navigation h2 {
+  padding-bottom: 25px;
+  color: #77777b;
+  font-size: 15px;  
+  font-style: normal;
+}
+
+.filter-navigation h2 a { 
+  color: #77777b;
+  transition: all 0.3s;
+ }
+
+.filter-navigation h2 a:hover { color: #c4180f; }
+
+.filter-content h3 {
+  padding-bottom: 35px;
+  color: #df453e;
+  font-size: 30px;
+}
+
+.dropdown { 
+  position: relative; 
+  flex-basis: 30%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 2px;
+  width: 100%;
+  background-color: #51535a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content.show a {
+  float: none;
+  display: block;
+  padding: 15px;
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.dropdown-content a:hover {
+  padding: 15px;
+  background-color: #ddd;
+  color: #000;
+}
+
+.show { display: block; }
+
+.dropbtn {
+  display: flex;
+  justify-content: space-between;
+  color: #4b4f58;
+  transition: all 0.3s;
+}
+
+.dropbtn:hover,
+.dropbtn:hover::after { color: #000; }
+
+.dropbtn::after { 
+  font-family: "FontAwesome";
+  content: "\f107";
+  color: #808fa0;
+  text-indent: 0;
+  transition: all 0.3s;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  color: #4b4f58;
+  font-size: 16px;
+}
+
+.category h3,
+.filtertext { padding-bottom: 25px; }
+.apply { 
+  position: relative;
+  left: 66%;
+  background-color: #32373c;
+ }
+
+ .category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+ }
+
+ .category-list a { color: #c4180f; }
+ .category { padding-bottom: 45px; }
+/* ----------------bicycle page main styling ends---------------------------------*/
+
 /*=================================
   main styling ends here
 =================================*/
@@ -912,7 +1359,7 @@ footer p { font-size: 15px; }
 .footersocial::after { 
   font-family: "FontAwesome";
   color: #fff;
-  font-size: 20px;
+  font-size: 17px;
   text-indent: 0;
   transition: all 0.3s;
 }
@@ -930,4 +1377,30 @@ footer p { font-size: 15px; }
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  .footer-list li { flex-basis: 22%; }
 }  
+
+@media only screen and (max-width: 768px) {
+  .footer-list li { flex-basis: 55%; }
+  .footer-logo { padding-bottom: 10px; }
+  .footer-list {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 70px 0 15px;
+    text-align: center;
+  }
+
+  .copyrights .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .footersocial-icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  footer p { font-size: 13px; }
+} 
