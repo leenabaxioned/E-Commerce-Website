@@ -50,7 +50,7 @@
             </a>
           </h1>
           <nav class="head-nav navigation">
-            <ul class="nav-menu">
+            <ul class="nav-menu capital">
               <li>
                 <a href="index.html" class="nav-link" title="Home">Home</a>
               </li>
@@ -94,79 +94,341 @@
       <main>
         <!--accesory products section start-->
         <section class="accesory-products products">
-          <div class="filtercontainer">
-            <div class="sidebar">
-              <div class="searchbox">
-                <div class="wrapper">
-                  <span class="searchtext">Search</span>
-                  <input
-                    type="text"
-                    class="search"
-                    placeholder="Search products..."
-                  />
-                  <button type="submit" class="submit-arrow">
-                    submit arrow
-                  </button>
+          <div class="wrapper">
+            <div class="filtercontainer">
+              <div class="sidebar">
+                <div class="searchbox">
+                  <div class="wrapper">
+                    <span class="searchtext">Search</span>
+                    <form class="searchfield" action="javascript:void(0);">
+                      <input type="text" class="search" placeholder="Kryo" />
+                      <button type="submit" class="submit-arrow">
+                        submit arrow
+                      </button>
+                    </form>
+                  </div>
                 </div>
-              </div>
-              <div class="price">
-                <div class="wrapper">
-                  <span class="filtertext">Filter by price</span>
-                  <div class="double_range_slider_box">
-                    <div class="double_range_slider">
-                      <span class="range_track"></span>
-                      <input
-                        type="range"
-                        class="min"
-                        min="20"
-                        max="350"
-                        value="20"
-                      />
-                      <input
-                        type="range"
-                        class="max"
-                        min="20"
-                        max="350"
-                        value="20"
-                      />
-                      <div class="minvalue"></div>
-                      <div class="maxvalue"></div>
-                      <button type="submit" class="apply">Apply</button>
+                <div class="price">
+                  <div class="wrapper">
+                    <span class="filtertext">Filter by price</span>
+                    <div class="double_range_slider_box">
+                      <div class="range">
+                        <input
+                          type="range"
+                          min="20"
+                          max="350"
+                          value="20"
+                          class="min input"
+                        />
+                        <input
+                          type="range"
+                          min="20"
+                          max="350"
+                          value="350"
+                          class="max input"
+                        />
+                      </div>
+                      <ul class="low-high">
+                        <li class="low">$20.00</li>
+                        <li class="high">$350.00</li>
+                      </ul>
+                      <div class="btnright">
+                        <button type="submit" class="apply btn capital">
+                          Apply
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="category">
-                <div class="wrapper">
-                  <h3>Filter By Categories</h3>
-                  <ul class="category-list"></ul>
-                </div>
-              </div>
-            </div>
-            <div class="filter-content">
-              <div class="wrapper">
-                <nav class="filter-navigation">
-                  <h2>
-                    <a href="index.html" class="filternav-link" title="Contact"
-                      >Home/</a
-                    >Accessories
-                  </h2>
-                </nav>
-                <h3>Accessories</h3>
-                <div class="results">
-                  <span>showing all 10 results</span>
-                  <div class="dropdown pages">
-                    <a href="#FIXME" class="dropbtn" title="Default sorting"
-                      >Default sorting</a
-                    >
-                    <div class="dropdown-content">
-                      <a href="#FIXME" title="Link1">Price low to high</a>
-                      <a href="#FIXME" title="Link2">Price high to low</a>
-                      <a href="#FIXME" title="Link3">Sort by latest</a>
-                    </div>
+                <div class="category">
+                  <div class="wrapper">
+                    <h3 class="capital">Filter By Categories</h3>
+                    <ul class="category-list">
+                      <li>
+                        <a
+                          class="accessory-category"
+                          href="accessory.html"
+                          title="Accessories"
+                          >Accessories</a
+                        >
+                        (10)
+                      </li>
+                      <li>
+                        <a
+                          class="accessory-category"
+                          href="bicycle.html"
+                          title="Bicycles"
+                          >Bicycles</a
+                        >
+                        (8)
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="products"></div>
+              </div>
+              <div class="filter-content">
+                <div class="wrapper">
+                  <nav class="filter-navigation">
+                    <h2>
+                      <a
+                        href="index.html"
+                        class="filternav-link"
+                        title="Contact"
+                        >Home/</a
+                      >Accessories
+                    </h2>
+                  </nav>
+                  <h3 class="capital">Accessories</h3>
+                  <div class="results">
+                    <span>Showing all 10 results</span>
+                    <div class="dropdown sorting">
+                      <a href="#FIXME" class="dropbtn" title="Default sorting"
+                        >Default sorting</a
+                      >
+                      <div class="dropdown-content">
+                        <a href="#FIXME" title="Link1">Price low to high</a>
+                        <a href="#FIXME" title="Link2">Price high to low</a>
+                        <a href="#FIXME" title="Link3">Sort by latest</a>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="products-info">
+                    <li class="accessory-list">
+                      <figure>
+                        <img
+                          src="assets/images/accessories-4-800x800.jpg"
+                          class="accessoriesimg"
+                          alt="Accessories"
+                        />
+                        <figcaption class="gloves blue">
+                          <span class="accessories-heading">Accessories</span>
+                          <h4>Bicycle gloves blue</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="accessories">$27.00 - $35.00</span>
+                          <div class="sizes">
+                            <a href="#FIXME" title="Sizw L">L</a>
+                            <a href="#FIXME" title="Sizw M">M</a>
+                            <a href="#FIXME" title="Sizw XL">XL</a>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="accessory-list">
+                      <figure>
+                        <img
+                          src="assets/images/accessories-1-800x800.jpg"
+                          class="accessoriesimg"
+                          alt="Accessories"
+                        />
+                        <figcaption class="glove gold">
+                          <span class="accessories-heading">Accessories</span>
+                          <h4>Bicycle gloves gold</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="accessories">$27.00 - $35.00</span>
+                          <div class="sizes">
+                            <a href="#FIXME" title="Sizw L">L</a>
+                            <a href="#FIXME" title="Sizw M">M</a>
+                            <a href="#FIXME" title="Sizw XL">XL</a>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="accessory-list">
+                      <figure>
+                        <img
+                          src="assets/images/accessories-5-800x800.jpg"
+                          class="accessoriesimg"
+                          alt="Accessories"
+                        />
+                        <figcaption class="glove pink">
+                          <span class="accessories-heading">Accessories</span>
+                          <h4>Bicycle gloves pink</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="accessories">$27.00 - $35.00</span>
+                          <div class="sizes">
+                            <a href="#FIXME" title="Sizw L">L</a>
+                            <a href="#FIXME" title="Sizw M">M</a>
+                            <a href="#FIXME" title="Sizw XL">XL</a>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="accessory-list">
+                      <figure>
+                        <img
+                          src="assets/images/accessories-3-800x800.jpg"
+                          class="accessoriesimg"
+                          alt="Accessories"
+                        />
+                        <figcaption class="glove red">
+                          <span class="accessories-heading">Accessories</span>
+                          <h4>Bicycle gloves red</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="accessories">$30.00 - $50.00</span>
+                          <div class="sizes">
+                            <a href="#FIXME" title="Sizw L">L</a>
+                            <a href="#FIXME" title="Sizw M">M</a>
+                            <a href="#FIXME" title="Sizw XL">XL</a>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="accessory-list">
+                      <figure>
+                        <img
+                          src="assets/images/zeeconvert-com.jpg"
+                          class="accessoriesimg"
+                          alt="Accessories"
+                        />
+                        <figcaption class="glove black">
+                          <span class="accessories-heading">Accessories</span>
+                          <h4>Bicycle gloves black</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="accessories">$145.00 - $165.00</span>
+                          <div class="sizes">
+                            <a href="#FIXME" title="Sizw L">L</a>
+                            <a href="#FIXME" title="Sizw M">M</a>
+                            <a href="#FIXME" title="Sizw XL">XL</a>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="accessory-list">
+                      <figure>
+                        <img
+                          src="assets/images/zeeconvert-com6.jpg"
+                          class="accessoriesimg"
+                          alt="Accessories"
+                        />
+                        <figcaption class="helmet red">
+                          <span class="accessories-heading">Accessories</span>
+                          <h4>Bicycle helmet red</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="accessories">$145.00 - $165.00</span>
+                          <div class="sizes">
+                            <a href="#FIXME" title="Sizw L">L</a>
+                            <a href="#FIXME" title="Sizw M">M</a>
+                            <a href="#FIXME" title="Sizw XL">XL</a>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="accessory-list">
+                      <figure>
+                        <img
+                          src="assets/images/zeeconvert-com2.jpg"
+                          class="accessoriesimg"
+                          alt="Accessories"
+                        />
+                        <figcaption class="helmet blue">
+                          <span class="accessories-heading">Accessories</span>
+                          <h4>Bicycle helmet black</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="accessories">$145.00 - $165.00</span>
+                          <div class="sizes">
+                            <a href="#FIXME" title="Sizw L">L</a>
+                            <a href="#FIXME" title="Sizw M">M</a>
+                            <a href="#FIXME" title="Sizw XL">XL</a>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="accessory-list">
+                      <figure>
+                        <img
+                          src="assets/images/zeeconvert-com5.jpg"
+                          class="accessoriesimg"
+                          alt="Accessories"
+                        />
+                        <figcaption class="helmet neon">
+                          <span class="accessories-heading">Accessories</span>
+                          <h4>Bicycle helmet neon</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="accessories">$145.00 - $165.00</span>
+                          <div class="sizes">
+                            <a href="#FIXME" title="Sizw L">L</a>
+                            <a href="#FIXME" title="Sizw M">M</a>
+                            <a href="#FIXME" title="Sizw XL">XL</a>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="accessory-list">
+                      <figure>
+                        <img
+                          src="assets/images/zeeconvert-com4.jpg"
+                          class="accessoriesimg"
+                          alt="Accessories"
+                        />
+                        <figcaption class="helmet grey">
+                          <span class="accessories-heading">Accessories</span>
+                          <h4>Bicycle helmet grey</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="accessories">$145.00 - $165.00</span>
+                          <div class="sizes">
+                            <a href="#FIXME" title="Sizw L">L</a>
+                            <a href="#FIXME" title="Sizw M">M</a>
+                            <a href="#FIXME" title="Sizw XL">XL</a>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -175,7 +437,7 @@
       </main>
       <!--main section end-->
       <!--footer section start-->
-      <footer>
+      <footer class="accessoryfooter">
         <div class="wrapper">
           <ul class="footer-list">
             <li>
@@ -186,7 +448,7 @@
               </h1>
             </li>
             <li class="footer-links">
-              <h4>Usefull Links</h4>
+              <h4 class="capital">Usefull Links</h4>
               <ul>
                 <li><a href="index.html" title="Home">Home</a></li>
                 <li><a href="#FIXME" title="Shop">Shop</a></li>
@@ -197,7 +459,7 @@
               </ul>
             </li>
             <li class="footer-links">
-              <h4>Our Collection</h4>
+              <h4 class="capital">Our Collection</h4>
               <ul>
                 <li>
                   <a href="#FIXME" title="Mountain Bikes">Mountain Bikes</a>
@@ -212,7 +474,7 @@
               </ul>
             </li>
             <li class="footer-links">
-              <h4>Account</h4>
+              <h4 class="capital">Account</h4>
               <ul>
                 <li>
                   <a href="#FIXME" title="Customer Login">Customer Login</a>
@@ -225,7 +487,9 @@
               </ul>
             </li>
           </ul>
-          <div class="copyrights">
+        </div>
+        <div class="copyrights">
+          <div class="wrapper">
             <p>Copyright &copy; 2022 Cycle Shop</p>
             <ul class="footersocial-icons">
               <li class="nav-item">

@@ -51,7 +51,7 @@
             </a>
           </h1>
           <nav class="head-nav navigation">
-            <ul class="nav-menu">
+            <ul class="nav-menu capital">
               <li>
                 <a href="index.html" class="nav-link" title="Home">Home</a>
               </li>
@@ -95,79 +95,275 @@
       <main>
         <!--bicycle products section start-->
         <section class="bicycle-products products">
-          <div class="filtercontainer">
-            <div class="sidebar">
-              <div class="searchbox">
-                <div class="wrapper">
-                  <span class="searchtext">Search</span>
-                  <input
-                    type="text"
-                    class="search"
-                    placeholder="Search products..."
-                  />
-                  <button type="submit" class="submit-arrow">
-                    submit arrow
-                  </button>
+          <div class="wrapper">
+            <div class="filtercontainer">
+              <div class="sidebar">
+                <div class="searchbox">
+                  <div class="wrapper">
+                    <span class="searchtext">Search</span>
+                    <form class="searchfield" action="javascript:void(0);">
+                      <input type="text" class="search" placeholder="Kryo" />
+                      <button type="submit" class="submit-arrow">
+                        submit arrow
+                      </button>
+                    </form>
+                  </div>
                 </div>
-              </div>
-              <div class="price">
-                <div class="wrapper">
-                  <span class="filtertext">Filter by price</span>
-                  <div class="double_range_slider_box">
-                    <div class="double_range_slider">
-                      <span class="range_track"></span>
-                      <input
-                        type="range"
-                        class="min"
-                        min="20"
-                        max="350"
-                        value="20"
-                      />
-                      <input
-                        type="range"
-                        class="max"
-                        min="20"
-                        max="350"
-                        value="350"
-                      />
-                      <div class="minvalue"></div>
-                      <div class="maxvalue"></div>
-                      <button type="submit" class="apply">Apply</button>
+                <div class="price">
+                  <div class="wrapper">
+                    <span class="filtertext">Filter by price</span>
+                    <div class="double_range_slider_box">
+                      <div class="range">
+                        <input
+                          type="range"
+                          min="20"
+                          max="350"
+                          value="20"
+                          class="min input"
+                        />
+                        <input
+                          type="range"
+                          min="20"
+                          max="350"
+                          value="350"
+                          class="max input"
+                        />
+                      </div>
+                      <ul class="low-high">
+                        <li class="low">$20.00</li>
+                        <li class="high">$350.00</li>
+                      </ul>
+                      <div class="btnright">
+                        <button type="submit" class="apply btn capital">
+                          Apply
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="category">
-                <div class="wrapper">
-                  <h3>Filter By Categories</h3>
-                  <ul class="category-list"></ul>
-                </div>
-              </div>
-            </div>
-            <div class="filter-content">
-              <div class="wrapper">
-                <nav class="filter-navigation">
-                  <h2>
-                    <a href="index.html" class="filternav-link" title="Contact"
-                      >Home/</a
-                    >Bicycle
-                  </h2>
-                </nav>
-                <h3>Bicycles</h3>
-                <div class="results">
-                  <span>showing all 8 results</span>
-                  <div class="dropdown pages">
-                    <a href="#FIXME" class="dropbtn" title="Default sorting"
-                      >Default sorting</a
-                    >
-                    <div class="dropdown-content">
-                      <a href="#FIXME" title="Link1">Price low to high</a>
-                      <a href="#FIXME" title="Link2">Price high to low</a>
-                      <a href="#FIXME" title="Link3">Sort by latest</a>
-                    </div>
+                <div class="category">
+                  <div class="wrapper">
+                    <h3 class="capital">Filter By Categories</h3>
+                    <ul class="category-list">
+                      <li>
+                        <a
+                          class="accessory-category"
+                          href="accessory.html"
+                          title="Accessories"
+                          >Accessories</a
+                        >
+                        (10)
+                      </li>
+                      <li>
+                        <a
+                          class="accessory-category"
+                          href="bicycle.html"
+                          title="Bicycles"
+                          >Bicycles</a
+                        >
+                        (8)
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="products"></div>
+              </div>
+              <div class="filter-content">
+                <div class="wrapper">
+                  <nav class="filter-navigation">
+                    <h2>
+                      <a
+                        href="index.html"
+                        class="filternav-link"
+                        title="Contact"
+                        >Home/</a
+                      >Bicycle
+                    </h2>
+                  </nav>
+                  <h3 class="capital">Bicycles</h3>
+                  <div class="results">
+                    <span>Showing all 8 results</span>
+                    <div class="dropdown sorting">
+                      <a href="#FIXME" class="dropbtn" title="Default sorting"
+                        >Default sorting</a
+                      >
+                      <div class="dropdown-content">
+                        <a href="#FIXME" title="Link1">Price low to high</a>
+                        <a href="#FIXME" title="Link2">Price high to low</a>
+                        <a href="#FIXME" title="Link3">Sort by latest</a>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="products-info">
+                    <li>
+                      <figure>
+                        <img
+                          src="assets/images/bicycle-7-800x800.jpg"
+                          class="bicycleImg open-modal-btn"
+                          alt="Bicycles"
+                        />
+                        <figcaption class="arrival arrival1">
+                          <span class="arrival-heading">Bicycles</span>
+                          <h4 class="capital">kryo x26 mtb - model k</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="bicycle-price">$350.00</span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <img
+                          src="assets/images/bicycle-1-800x800.jpg"
+                          class="bicycleImg open-modal-btn"
+                          alt="Bicycles"
+                        />
+                        <figcaption class="arrival arrival2">
+                          <span class="arrival-heading">Bicycles</span>
+                          <h4 class="capital">kryo x26 mtb - model x</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="bicycle-price">$350.00</span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <img
+                          src="assets/images/bicycle-5-800x800.jpg"
+                          class="bicycleImg open-modal-btn"
+                          alt="Bicycles"
+                        />
+                        <figcaption class="arrival arrival3">
+                          <span class="arrival-heading">Bicycles</span>
+                          <h4 class="capital">kryo x26 mtb - model y</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="bicycle-price">$350.00</span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <img
+                          src="assets/images/bicycle-1-800x800.jpg"
+                          class="bicycleImg open-modal-btn"
+                          alt="Bicycles"
+                        />
+                        <figcaption class="arrival arrival4">
+                          <span class="arrival-heading">Bicycles</span>
+                          <h4 class="capital">kryo x26 mtb - model z</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="bicycle-price">$350.00</span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <img
+                          src="assets/images/bicycle-3.jpg"
+                          class="bicycleImg open-modal-btn"
+                          alt="Bicycles"
+                        />
+                        <figcaption class="arrival arrival5">
+                          <span class="arrival-heading">Bicycles</span>
+                          <h4 class="capital">kryo x26 mtb - model a</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="bicycle-price">$350.00</span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <img
+                          src="assets/images/bicycle-8.jpg"
+                          class="bicycleImg open-modal-btn"
+                          alt="Bicycles"
+                        />
+                        <figcaption class="arrival arrival6">
+                          <span class="arrival-heading">Bicycles</span>
+                          <h4 class="capital">kryo x26 mtb - model b</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="bicycle-price">$350.00</span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <img
+                          src="assets/images/bicycle-3.jpg"
+                          class="bicycleImg open-modal-btn"
+                          alt="Bicycles"
+                        />
+                        <figcaption class="arrival arrival7">
+                          <span class="arrival-heading">Bicycles</span>
+                          <h4 class="capital">kryo x26 mtb - model c</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="bicycle-price">$350.00</span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <img
+                          src="assets/images/bicycle-9.jpg"
+                          class="bicycleImg open-modal-btn"
+                          alt="Bicycles"
+                        />
+                        <figcaption class="arrival arrival8">
+                          <span class="arrival-heading">Bicycles</span>
+                          <h4 class="capital">kryo x26 mtb - model c</h4>
+                          <ul class="stars">
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                            <li>star</li>
+                          </ul>
+                          <span class="bicycle-price">$350.00</span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -176,7 +372,7 @@
       </main>
       <!--main section end-->
       <!--footer section start-->
-      <footer>
+      <footer class="bicyclefooter">
         <div class="wrapper">
           <ul class="footer-list">
             <li>
@@ -187,18 +383,18 @@
               </h1>
             </li>
             <li class="footer-links">
-              <h4>Usefull Links</h4>
+              <h4 class="capital">Usefull Links</h4>
               <ul>
-                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="./index.html" title="Home">Home</a></li>
                 <li><a href="#FIXME" title="Shop">Shop</a></li>
                 <li><a href="#FIXME" title="About Us">About Us</a></li>
                 <li>
-                  <a href="contact.html" title="Contact Us">Contact Us</a>
+                  <a href="./contact.html" title="Contact Us">Contact Us</a>
                 </li>
               </ul>
             </li>
             <li class="footer-links">
-              <h4>Our Collection</h4>
+              <h4 class="capital">Our Collection</h4>
               <ul>
                 <li>
                   <a href="#FIXME" title="Mountain Bikes">Mountain Bikes</a>
@@ -213,7 +409,7 @@
               </ul>
             </li>
             <li class="footer-links">
-              <h4>Account</h4>
+              <h4 class="capital">Account</h4>
               <ul>
                 <li>
                   <a href="#FIXME" title="Customer Login">Customer Login</a>
@@ -226,7 +422,9 @@
               </ul>
             </li>
           </ul>
-          <div class="copyrights">
+        </div>
+        <div class="copyrights">
+          <div class="wrapper">
             <p>Copyright &copy; 2022 Cycle Shop</p>
             <ul class="footersocial-icons">
               <li class="nav-item">
