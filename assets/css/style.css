@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
@@ -5,7 +6,6 @@
 * Browsers: last 4 version
 */
 
-@charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -255,9 +255,9 @@ h4 {
 
 .homepage .banner-img::before {    
   content: "";
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(23, 26, 26, 0.5)), color-stop(50%, rgba(255, 83, 79, 0.5))), url("/assets/images/bike-hero.jpg");
-  background-image: -o-linear-gradient(left, rgba(23, 26, 26, 0.5) 50%, rgba(255, 83, 79, 0.5) 50%), url("/assets/images/bike-hero.jpg");
-  background-image: linear-gradient(to right, rgba(23, 26, 26, 0.5) 50%, rgba(255, 83, 79, 0.5) 50%), url("/assets/images/bike-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(23, 26, 26, 0.5)), color-stop(50%, rgba(255, 83, 79, 0.5))), url("../images/bike-hero.jpg");
+  background-image: -o-linear-gradient(left, rgba(23, 26, 26, 0.5) 50%, rgba(255, 83, 79, 0.5) 50%), url("../images/bike-hero.jpg");
+  background-image: linear-gradient(to right, rgba(23, 26, 26, 0.5) 50%, rgba(255, 83, 79, 0.5) 50%), url("../images/bike-hero.jpg");
   width: 100%;
   height: 100%;
   background-position: center center;
@@ -513,7 +513,7 @@ h4 {
 }
 
 .hide { display: none; }
-
+.open-modal-btn-wrapper img:hover { cursor: pointer; }
 /* ------------modal styling--------------------- */
 /* .modal-overlay {
 	background: rgba(0, 0, 0, 0.7);
@@ -658,9 +658,9 @@ h4 {
   left: 0px;
 }
 
-.mountain-bikeimg::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/moutain-bike.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/moutain-bike.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/moutain-bike.jpg"); }
-.city-bikeimg::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/city-bike.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/city-bike.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/city-bike.jpg"); }
-.speciality-bikeimg::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/speciality-bike.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/speciality-bike.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/speciality-bike.jpg"); }
+.mountain-bikeimg::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/moutain-bike.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/moutain-bike.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/moutain-bike.jpg"); }
+.city-bikeimg::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/city-bike.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/city-bike.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/city-bike.jpg"); }
+.speciality-bikeimg::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/speciality-bike.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/speciality-bike.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/speciality-bike.jpg"); }
 
 .moutain-bikecontent,
 .city-bikecontent,
@@ -723,11 +723,11 @@ h4 {
 .service-one .service { height: 400px; }
 .service-two .service { height: 225px; }
 
-.light-weight::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/kryo1.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo1.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo1.jpg"); }
-.warrenty::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/kryo2.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo2.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo2.jpg"); }
-.network::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/kryo3.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo3.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo3.jpg"); }
-.delivery::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/kryo4.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo4.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo4.jpg"); }
-.free::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/kryo5.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo5.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/kryo5.jpg"); }
+.light-weight::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/kryo1.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo1.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo1.jpg"); }
+.warrenty::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/kryo2.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo2.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo2.jpg"); }
+.network::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/kryo3.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo3.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo3.jpg"); }
+.delivery::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/kryo4.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo4.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo4.jpg"); }
+.free::before { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/kryo5.jpg"); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo5.jpg"); background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/kryo5.jpg"); }
 
 .service-content { 
   position: relative; 
@@ -885,9 +885,9 @@ h4 {
 
 .programme-img::before {    
   content: "";
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/join-programme.jpg");
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/join-programme.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/join-programme.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/join-programme.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/join-programme.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/join-programme.jpg");
   width: 100%;
   height: 100%;
   background-position: center center;
@@ -968,9 +968,9 @@ h4 {
 
 .shopnow-img::before {    
   content: "";
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("/assets/images/bike-hero.jpg");
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/bike-hero.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("/assets/images/bike-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1))), url("../images/bike-hero.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/bike-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/bike-hero.jpg");
   width: 100%;
   height: 100%;
   background-position: center center;
@@ -1016,7 +1016,7 @@ h4 {
 
 .contactpage .banner-content {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1226,7 +1226,7 @@ textarea { resize: none; }
   border-radius: 2px;
 }
 
-.div-span {
+.errorMessage {
   display: block;
   padding-bottom: 10px;
   color: #FF0000;
