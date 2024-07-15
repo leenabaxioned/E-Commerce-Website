@@ -24,9 +24,10 @@ hamburger.addEventListener("click", toggleMenu);
 $(document).ready(function () {
   var url = document.URL.split("/");
   var page = url[url.length - 1];
+  var webpage = url[url.length - 2]
 
   //Slick slider for arrival section images starts here-------------------------------------------
-  if (page === "index.html") {
+  if (page === "index.html" || page === webpage) {
     // index page functionalities
     var initializeSlick = (selector) => {
       $(selector).slick({
