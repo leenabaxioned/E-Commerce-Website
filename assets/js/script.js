@@ -21,78 +21,71 @@ function toggleMenu() {
 hamburger.addEventListener("click", toggleMenu);
 //Ontoggle hamburger function ends here-----------------------------------------
 
-$(document).ready(function () {
-  var url = document.URL.split("/");
-  var page = url[url.length - 1];
-  var webpage = url[url.length - 2]
+var initializeSlick = (selector) => {
+  $(selector).slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          arrows: true,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 995,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 776,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          arrows: true,
+        },
+      },
+    ],
+  });
+};
 
-  //Slick slider for arrival section images starts here-------------------------------------------
-  if (page === "index.html" || page === webpage) {
-    // index page functionalities
-    var initializeSlick = (selector) => {
-      $(selector).slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 4,
-              arrows: true,
-              infinite: true,
-            },
-          },
-          {
-            breakpoint: 995,
-            settings: {
-              arrows: true,
-              slidesToShow: 3,
-              slidesToScroll: 3,
-            },
-          },
-          {
-            breakpoint: 776,
-            settings: {
-              arrows: true,
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-          },
-          {
-            breakpoint: 640,
-            settings: {
-              arrows: true,
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: false,
-              arrows: true,
-            },
-          },
-          {
-            breakpoint: 375,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: false,
-              arrows: true,
-            },
-          },
-        ],
-      });
-    };
+initializeSlick(".slide-area");
+//Slick slider for arrival section images ends here-------------------------------------------
 
-    initializeSlick(".slide-area");
-    //Slick slider for arrival section images ends here-------------------------------------------
-
+  
     //modal function starts here--------------------------------------------------------------------------
     var images = document.querySelectorAll(".open-modal-btn");
     // Get modal and modal image elements
@@ -130,6 +123,15 @@ $(document).ready(function () {
       }
     });
     //modal function ends here-----------------------------------------------------
+
+$(document).ready(function () {
+  var url = document.URL.split("/");
+  var page = url[url.length - 1];
+
+  //Slick slider for arrival section images starts here-------------------------------------------
+  if (page === "index.html") {
+    // index page functionalities
+
   } else if (page === "accessory.html") {
     //accessory page functionalities
 
